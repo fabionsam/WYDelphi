@@ -1,0 +1,1099 @@
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x1D54, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432D7D [System.SysUtils][Sysutils._IntToStr32]
+433146 [System.SysUtils][Sysutils.IntToStr]
+63F998 [Unit1.pas][Unit1][MemoryInUse.Execute][148]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1797
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEA87F0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 E8 96 78 8C B5 C6 FD FF 80 80 80 80
+00 00 00 00 00 00 00 00 21 76 EA FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 68 43 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 EF 05 5D 00 00 00 00 00
+EB 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 00 0A 5D 00 00 00 00 00
+EB 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  Ë  ñ  x  å  µ  ∆  ˝  ˇ  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  !  v  Í  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  h  C  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  Ô  .  ]  .  .  .  .  .
+Î  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  .  .  ]  .  .  .  .  .
+Î  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 32040
+
+Este bloco foi criado pela thread 0x2594, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+6405C3 [Unit1.pas][Unit1][TForm1.FormCreate][279]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Functions
+
+O n˙mero de atribuiÁ„o era: 1720
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEAEA10:
+50 D8 5C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+P  ÿ  \  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x1D54, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F9BE [Unit1.pas][Unit1][MemoryInUse.Execute][148]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 90716
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED0ED0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 1C 00 00 00 42 00 6C 00 6F 00 63 00 6F 00 73 00 20 00 64 00
+65 00 20 00 6D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00 65 00 6D 00 20 00 75 00 73 00 6F 00
+3A 00 20 00 30 00 2E 00 00 00 B4 52 F0 31 9D 73 FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 61 FD EC FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 5E 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+30 3C 4B 00 00 00 00 00 FE 3E 4B 00 00 00 00 00 F2 5D 4B 00 00 00 00 00 05 5F 4B 00 00 00 00 00
+94 14 51 00 00 00 00 00 31 A3 40 00 00 00 00 00 FE 6A 4E 00 00 00 00 00 C8 DE 4E 00 00 00 00 00
+12 09 51 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  B  .  l  .  o  .  c  .  o  .  s  .     .  d  .
+e  .     .  m  .  e  .  m  .  Û  .  r  .  i  .  a  .     .  e  .  m  .     .  u  .  s  .  o  .
+:  .     .  0  .  .  .  .  .  ¥  R    1  ù  s  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  a  ˝  Ï  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  ^  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+0  <  K  .  .  .  .  .  ˛  >  K  .  .  .  .  .  Ú  ]  K  .  .  .  .  .  .  _  K  .  .  .  .  .
+î  .  Q  .  .  .  .  .  1  £  @  .  .  .  .  .  ˛  j  N  .  .  .  .  .  »  ﬁ  N  .  .  .  .  .
+.  .  Q  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x1D54, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F96A [Unit1.pas][Unit1][MemoryInUse.Execute][147]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+5D2E68 [Unit2.pas][Unit2][Functions.IsNumber][839]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 90714
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED12F0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 18 00 00 00 4D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00
+65 00 6D 00 20 00 75 00 73 00 6F 00 3A 00 20 00 30 00 20 00 62 00 79 00 74 00 65 00 73 00 2E 00
+00 00 41 92 74 0C 61 6B FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 98 60 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 36 31 41 00 00 00 00 00 B3 BF 43 00 00 00 00 00
+DA 1C 43 00 00 00 00 00 6C 33 43 00 00 00 00 00 68 2E 5D 00 00 00 00 00 DB 1E 5D 00 00 00 00 00
+03 06 64 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  M  .  e  .  m  .  Û  .  r  .  i  .  a  .     .
+e  .  m  .     .  u  .  s  .  o  .  :  .     .  0  .     .  b  .  y  .  t  .  e  .  s  .  .  .
+.  .  A  í  t  .  a  k  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  ò  `  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  6  1  A  .  .  .  .  .  ≥  ø  C  .  .  .  .  .
+⁄  .  C  .  .  .  .  .  l  3  C  .  .  .  .  .  h  .  ]  .  .  .  .  .  €  .  ]  .  .  .  .  .
+.  .  d  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x2594, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+64056A [Unit1.pas][Unit1][TForm1.FormCreate][275]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: MemoryInUse
+
+O n˙mero de atribuiÁ„o era: 1717
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF76D00:
+B0 F6 63 00 00 00 00 00 A0 01 00 00 00 00 00 00 54 1D 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6D 0F EC 78 B5 CB FF FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 5F 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 2E EC 40 00 00 00 00 00 20 E6 50 00 00 00 00 00 7C 12 51 00 00 00 00 00
+C7 14 51 00 00 00 00 00 31 A3 40 00 00 00 00 00 FE 6A 4E 00 00 00 00 00 C8 DE 4E 00 00 00 00 00
+∞  ˆ  c  .  .  .  .  .  †  .  .  .  .  .  .  .  T  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  m  .  Ï  x  µ  À  ˇ  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  _  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  .  Ï  @  .  .  .  .  .     Ê  P  .  .  .  .  .  |  .  Q  .  .  .  .  .
+«  .  Q  .  .  .  .  .  1  £  @  .  .  .  .  .  ˛  j  N  .  .  .  .  .  »  ﬁ  N  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x1D54, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432D7D [System.SysUtils][Sysutils._IntToStr32]
+433146 [System.SysUtils][Sysutils.IntToStr]
+63F944 [Unit1.pas][Unit1][MemoryInUse.Execute][147]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1722
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF892E0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 C9 1A 62 1F F0 D3 FF FF 80 80 80 80
+00 00 00 00 00 00 00 00 B1 8F F8 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 26 04 00 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+E3 42 43 00 00 00 00 00 47 43 43 00 00 00 00 00 BA 6B 4E 00 00 00 00 00 79 E0 4E 00 00 00 00 00
+4C C5 50 00 00 00 00 00 3F A3 40 00 00 00 00 00 FE 6A 4E 00 00 00 00 00 C8 DE 4E 00 00 00 00 00
+BF 65 4E 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+7A 43 43 00 00 00 00 00 F9 C2 4E 00 00 00 00 00 C6 C0 50 00 00 00 00 00 44 C9 4E 00 00 00 00 00
+85 CD 4E 00 00 00 00 00 CD CD 4E 00 00 00 00 00 65 CF 4E 00 00 00 00 00 A5 13 4F 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  …  .  b  .    ”  ˇ  ˇ  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ±  è  ¯  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  &  .  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+„  B  C  .  .  .  .  .  G  C  C  .  .  .  .  .  ∫  k  N  .  .  .  .  .  y  ‡  N  .  .  .  .  .
+L  ≈  P  .  .  .  .  .  ?  £  @  .  .  .  .  .  ˛  j  N  .  .  .  .  .  »  ﬁ  N  .  .  .  .  .
+ø  e  N  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+z  C  C  .  .  .  .  .  ˘  ¬  N  .  .  .  .  .  ∆  ¿  P  .  .  .  .  .  D  …  N  .  .  .  .  .
+Ö  Õ  N  .  .  .  .  .  Õ  Õ  N  .  .  .  .  .  e  œ  N  .  .  .  .  .  •  .  O  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x2594, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+6405D8 [Unit1.pas][Unit1][TForm1.FormCreate][280]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Commands
+
+O n˙mero de atribuiÁ„o era: 1721
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF89520:
+C0 C7 5D 00 00 00 00 00 00 00 00 00 00 00 00 00 F4 27 06 F9 02 C7 FD FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 4A 60 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 4B 10 5D 00 00 00 00 00
+F7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 BA 10 5D 00 00 00 00 00
+F7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+¿  «  ]  .  .  .  .  .  .  .  .  .  .  .  .  .  Ù  '  .  ˘  .  «  ˝  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  J  `  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  K  .  ]  .  .  .  .  .
+˜  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  ∫  .  ]  .  .  .  .  .
+˜  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x2594, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+640611 [Unit1.pas][Unit1][TForm1.FormCreate][284]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Enc_Dec
+
+O n˙mero de atribuiÁ„o era: 90674
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF8A060:
+B0 CC 5C 00 00 00 00 00 00 00 00 00 00 00 00 00 FF E1 98 F8 89 6B FC FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 D1 90 F8 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 60 60 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 4B 10 5D 00 00 00 00 00
+F7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 94 25 00 00 94 25 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 BA 10 5D 00 00 00 00 00
+F7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+∞  Ã  \  .  .  .  .  .  .  .  .  .  .  .  .  .  ˇ  ·  ò  ¯  â  k  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  —  ê  ¯  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  `  `  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  K  .  ]  .  .  .  .  .
+˜  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  î  %  .  .  î  %  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  ∫  .  ]  .  .  .  .  .
+˜  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:38:42--------------------------------
+Esta aplicaÁ„o teve fugas de memÛria. As fugas dos blocos pequenos s„o (excluindo as fugas esperadas, registadas por ponteiro):
+
+9 - 24 bytes: Enc_Dec x 1, Commands x 1, UnicodeString x 2
+57 - 88 bytes: UnicodeString x 2
+89 - 120 bytes: MemoryInUse x 1
+
+O tamanho das fugas dos blocos mÈdios e grandes È (excluindo as fugas esperadas registadas por ponteiro): 32040
+
+Nota: O detalhe da fuga de memÛria foi registado num ficheiro de texto na mesma pasta desta aplicaÁ„o. Para activar a detecÁ„o de fugas de memÛria, active o DEFINE "EnableMemoryLeakReporting".
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x930, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432D7D [System.SysUtils][Sysutils._IntToStr32]
+433146 [System.SysUtils][Sysutils.IntToStr]
+63F988 [Unit1.pas][Unit1][MemoryInUse.Execute][144]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1800
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEA8370:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 9C AF 78 8C 86 CB FD FF 80 80 80 80
+00 00 00 00 00 00 00 00 C1 7B EA FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 06 09 00 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 EF 05 5D 00 00 00 00 00
+DB 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 C0 20 00 00 C0 20 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 2E 07 5D 00 00 00 00 00
+DB 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  ú  Ø  x  å  Ü  À  ˝  ˇ  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ¡  {  Í  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  Ô  .  ]  .  .  .  .  .
+€  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  ¿     .  .  ¿     .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  .  .  ]  .  .  .  .  .
+€  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 32040
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+6405B3 [Unit1.pas][Unit1][TForm1.FormCreate][275]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Functions
+
+O n˙mero de atribuiÁ„o era: 1720
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEAEA10:
+50 D8 5C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+P  ÿ  \  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x930, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F9AE [Unit1.pas][Unit1][MemoryInUse.Execute][144]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 90734
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED0ED0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 1C 00 00 00 42 00 6C 00 6F 00 63 00 6F 00 73 00 20 00 64 00
+65 00 20 00 6D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00 65 00 6D 00 20 00 75 00 73 00 6F 00
+3A 00 20 00 30 00 2E 00 00 00 F8 66 F0 31 AF 87 FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 6C 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 85 44 4E 00 00 00 00 00 C0 9C 50 00 00 00 00 00
+4D 9E 50 00 00 00 00 00 93 A5 50 00 00 00 00 00 29 A9 50 00 00 00 00 00 31 A3 40 00 00 00 00 00
+FE 6A 4E 00 00 00 00 00 30 09 00 00 30 09 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  B  .  l  .  o  .  c  .  o  .  s  .     .  d  .
+e  .     .  m  .  e  .  m  .  Û  .  r  .  i  .  a  .     .  e  .  m  .     .  u  .  s  .  o  .
+:  .     .  0  .  .  .  .  .  ¯  f    1  Ø  á  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  l  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  Ö  D  N  .  .  .  .  .  ¿  ú  P  .  .  .  .  .
+M  û  P  .  .  .  .  .  ì  •  P  .  .  .  .  .  )  ©  P  .  .  .  .  .  1  £  @  .  .  .  .  .
+˛  j  N  .  .  .  .  .  0  .  .  .  0  .  .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x930, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F95A [Unit1.pas][Unit1][MemoryInUse.Execute][143]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+5C82ED [System.Win.ScktComp][Win.Scktcomp.TCustomWinSocket.AsyncInitSocket]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 90729
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED1450:
+C4 13 69 00 B0 04 02 00 01 00 00 00 18 00 00 00 4D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00
+65 00 6D 00 20 00 75 00 73 00 6F 00 3A 00 20 00 30 00 20 00 62 00 79 00 74 00 65 00 73 00 2E 00
+00 00 A3 AA AD 0B 26 70 FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 61 FD EC FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 67 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+30 3C 4B 00 00 00 00 00 FE 3E 4B 00 00 00 00 00 F2 5D 4B 00 00 00 00 00 05 5F 4B 00 00 00 00 00
+94 14 51 00 00 00 00 00 31 A3 40 00 00 00 00 00 FE 6A 4E 00 00 00 00 00 C8 DE 4E 00 00 00 00 00
+12 09 51 00 00 00 00 00 C0 20 00 00 C0 20 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  M  .  e  .  m  .  Û  .  r  .  i  .  a  .     .
+e  .  m  .     .  u  .  s  .  o  .  :  .     .  0  .     .  b  .  y  .  t  .  e  .  s  .  .  .
+.  .  £  ™  ≠  .  &  p  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  a  ˝  Ï  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  g  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+0  <  K  .  .  .  .  .  ˛  >  K  .  .  .  .  .  Ú  ]  K  .  .  .  .  .  .  _  K  .  .  .  .  .
+î  .  Q  .  .  .  .  .  1  £  @  .  .  .  .  .  ˛  j  N  .  .  .  .  .  »  ﬁ  N  .  .  .  .  .
+.  .  Q  .  .  .  .  .  ¿     .  .  ¿     .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+64055A [Unit1.pas][Unit1][TForm1.FormCreate][271]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: MemoryInUse
+
+O n˙mero de atribuiÁ„o era: 1717
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF76D00:
+B0 F6 63 00 00 00 00 00 A0 01 00 00 00 00 00 00 30 09 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 51 14 EC 78 89 D0 FF FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 E0 4D F7 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+80 D0 41 00 00 00 00 00 00 00 00 00 50 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+58 9B 40 00 00 00 00 00 51 A6 40 00 00 00 00 00 F7 57 48 00 00 00 00 00 7F 00 64 00 00 00 00 00
+C6 73 4E 00 00 00 00 00 AB D2 50 00 00 00 00 00 E4 E1 50 00 00 00 00 00 31 A3 40 00 00 00 00 00
+∞  ˆ  c  .  .  .  .  .  †  .  .  .  .  .  .  .  0  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Q  .  Ï  x  â  –  ˇ  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ‡  M  ˜  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Ä  –  A  .  .  .  .  .  .  .  .  .  P  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+X  õ  @  .  .  .  .  .  Q  ¶  @  .  .  .  .  .  ˜  W  H  .  .  .  .  .    .  d  .  .  .  .  .
+∆  s  N  .  .  .  .  .  ´  “  P  .  .  .  .  .  ‰  ·  P  .  .  .  .  .  1  £  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+64007F [Unit1.pas][Unit1][TForm1.Button1Click][225]
+4E73C6 [Vcl.Controls][Controls.TControl.Click]
+50D2AB [Vcl.StdCtrls][Stdctrls.TCustomButton.Click]
+50E1E4 [Vcl.StdCtrls][Stdctrls.TCustomButton.CNCommand]
+40A331 [System][TObject.Dispatch]
+4E6AFE [Vcl.Controls][Controls.TControl.WndProc]
+
+O bloco est· sendo usado por um objecto da classe: LoginDisconnect
+
+O n˙mero de atribuiÁ„o era: 90704
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF76E80:
+70 F3 63 00 00 00 00 00 C4 01 00 00 00 00 00 00 20 1D 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 15 10 9A F8 3F 70 FC FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 91 6A F7 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 ED 05 00 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+58 9B 40 00 00 00 00 00 51 A6 40 00 00 00 00 00 48 59 47 00 00 00 00 00 1D F1 50 00 00 00 00 00
+D7 CF 47 00 00 00 00 00 DE D3 47 00 00 00 00 00 F1 D7 47 00 00 00 00 00 E3 D6 47 00 00 00 00 00
+p  Û  c  .  .  .  .  .  ƒ  .  .  .  .  .  .  .     .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ö  ¯  ?  p  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ë  j  ˜  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  Ì  .  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+X  õ  @  .  .  .  .  .  Q  ¶  @  .  .  .  .  .  H  Y  G  .  .  .  .  .  .  Ò  P  .  .  .  .  .
+◊  œ  G  .  .  .  .  .  ﬁ  ”  G  .  .  .  .  .  Ò  ◊  G  .  .  .  .  .  „  ÷  G  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+64009C [Unit1.pas][Unit1][TForm1.Button1Click][227]
+4E73C6 [Vcl.Controls][Controls.TControl.Click]
+50D2AB [Vcl.StdCtrls][Stdctrls.TCustomButton.Click]
+50E1E4 [Vcl.StdCtrls][Stdctrls.TCustomButton.CNCommand]
+40A331 [System][TObject.Dispatch]
+4E6AFE [Vcl.Controls][Controls.TControl.WndProc]
+
+O bloco est· sendo usado por um objecto da classe: SaveAccs
+
+O n˙mero de atribuiÁ„o era: 90706
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF77600:
+90 F4 63 00 00 00 00 00 D0 01 00 00 00 00 00 00 9C 1E 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 52 92 97 FC AD 95 FE FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 E0 4D F7 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+80 D0 41 00 00 00 00 00 00 00 00 00 54 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+58 9B 40 00 00 00 00 00 51 A6 40 00 00 00 00 00 F7 57 48 00 00 00 00 00 B9 00 64 00 00 00 00 00
+C6 73 4E 00 00 00 00 00 AB D2 50 00 00 00 00 00 E4 E1 50 00 00 00 00 00 31 A3 40 00 00 00 00 00
+ê  Ù  c  .  .  .  .  .  –  .  .  .  .  .  .  .  ú  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  R  í  ó  ¸  ≠  ï  ˛  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ‡  M  ˜  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Ä  –  A  .  .  .  .  .  .  .  .  .  T  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+X  õ  @  .  .  .  .  .  Q  ¶  @  .  .  .  .  .  ˜  W  H  .  .  .  .  .  π  .  d  .  .  .  .  .
+∆  s  N  .  .  .  .  .  ´  “  P  .  .  .  .  .  ‰  ·  P  .  .  .  .  .  1  £  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+6400B9 [Unit1.pas][Unit1][TForm1.Button1Click][229]
+4E73C6 [Vcl.Controls][Controls.TControl.Click]
+50D2AB [Vcl.StdCtrls][Stdctrls.TCustomButton.Click]
+50E1E4 [Vcl.StdCtrls][Stdctrls.TCustomButton.CNCommand]
+40A331 [System][TObject.Dispatch]
+4E6AFE [Vcl.Controls][Controls.TControl.WndProc]
+
+O bloco est· sendo usado por um objecto da classe: AttHPMP
+
+O n˙mero de atribuiÁ„o era: 90708
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF77780:
+A0 F5 63 00 00 00 00 00 D4 01 00 00 00 00 00 00 30 0A 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 B5 90 97 FC AB 95 FE FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 E0 4D F7 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+80 D0 41 00 00 00 00 00 00 00 00 00 57 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+58 9B 40 00 00 00 00 00 51 A6 40 00 00 00 00 00 F7 57 48 00 00 00 00 00 F9 00 64 00 00 00 00 00
+C6 73 4E 00 00 00 00 00 AB D2 50 00 00 00 00 00 E4 E1 50 00 00 00 00 00 31 A3 40 00 00 00 00 00
+†  ı  c  .  .  .  .  .  ‘  .  .  .  .  .  .  .  0  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  µ  ê  ó  ¸  ´  ï  ˛  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ‡  M  ˜  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Ä  –  A  .  .  .  .  .  .  .  .  .  W  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+X  õ  @  .  .  .  .  .  Q  ¶  @  .  .  .  .  .  ˜  W  H  .  .  .  .  .  ˘  .  d  .  .  .  .  .
+∆  s  N  .  .  .  .  .  ´  “  P  .  .  .  .  .  ‰  ·  P  .  .  .  .  .  1  £  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+4857F7 [System.Classes][Classes.TThread.$bctr]
+6400F9 [Unit1.pas][Unit1][TForm1.Button1Click][233]
+4E73C6 [Vcl.Controls][Controls.TControl.Click]
+50D2AB [Vcl.StdCtrls][Stdctrls.TCustomButton.Click]
+50E1E4 [Vcl.StdCtrls][Stdctrls.TCustomButton.CNCommand]
+40A331 [System][TObject.Dispatch]
+4E6AFE [Vcl.Controls][Controls.TControl.WndProc]
+
+O bloco est· sendo usado por um objecto da classe: LoginDisconnect
+
+O n˙mero de atribuiÁ„o era: 90711
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF77900:
+70 F3 63 00 00 00 00 00 DC 01 00 00 00 00 00 00 94 24 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F5 8E 97 FC A8 95 FE FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 71 62 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 2E EC 40 00 00 00 00 00 20 E6 50 00 00 00 00 00 7C 12 51 00 00 00 00 00
+C7 14 51 00 00 00 00 00 31 A3 40 00 00 00 00 00 FE 6A 4E 00 00 00 00 00 C8 DE 4E 00 00 00 00 00
+p  Û  c  .  .  .  .  .  ‹  .  .  .  .  .  .  .  î  $  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ı  é  ó  ¸  ®  ï  ˛  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  q  b  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  .  Ï  @  .  .  .  .  .     Ê  P  .  .  .  .  .  |  .  Q  .  .  .  .  .
+«  .  Q  .  .  .  .  .  1  £  @  .  .  .  .  .  ˛  j  N  .  .  .  .  .  »  ﬁ  N  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+640601 [Unit1.pas][Unit1][TForm1.FormCreate][280]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Enc_Dec
+
+O n˙mero de atribuiÁ„o era: 90674
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF891C0:
+B0 CC 5C 00 00 00 00 00 00 00 00 00 00 00 00 00 93 F5 98 F8 5D 70 FC FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 4A 60 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 4B 10 5D 00 00 00 00 00
+E7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 C0 20 00 00 C0 20 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 BA 10 5D 00 00 00 00 00
+E7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+∞  Ã  \  .  .  .  .  .  .  .  .  .  .  .  .  .  ì  ı  ò  ¯  ]  p  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  J  `  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  K  .  ]  .  .  .  .  .
+Á  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  ¿     .  .  ¿     .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  ∫  .  ]  .  .  .  .  .
+Á  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x20C0, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+6405C8 [Unit1.pas][Unit1][TForm1.FormCreate][276]
+5A66A5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60AE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5F70 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60A3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Commands
+
+O n˙mero de atribuiÁ„o era: 1721
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF89520:
+C0 C7 5D 00 00 00 00 00 00 00 00 00 00 00 00 00 D8 2C 06 F9 D6 CB FD FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 11 A5 F8 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 67 60 01 00 08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 95 1C 47 00 00 00 00 00 4B 10 5D 00 00 00 00 00
+E7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+70 5F 5A 00 00 00 00 00 C0 20 00 00 C0 20 00 00 3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 FD 8C 47 00 00 00 00 00 54 12 5D 00 00 00 00 00
+E7 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+¿  «  ]  .  .  .  .  .  .  .  .  .  .  .  .  .  ÿ  ,  .  ˘  ÷  À  ˝  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  .  •  ¯  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  g  `  .  .  .  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ï  .  G  .  .  .  .  .  K  .  ]  .  .  .  .  .
+Á  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+p  _  Z  .  .  .  .  .  ¿     .  .  ¿     .  .  ?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  ˝  å  G  .  .  .  .  .  T  .  ]  .  .  .  .  .
+Á  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 40
+
+Este bloco foi criado pela thread 0x930, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D108 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432D7D [System.SysUtils][Sysutils._IntToStr32]
+433146 [System.SysUtils][Sysutils.IntToStr]
+63F934 [Unit1.pas][Unit1][MemoryInUse.Execute][143]
+4855CB [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1722
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF97AF0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 9A E6 3A 0C 85 D0 FF FF 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 00 00 00 00 71 89 F9 FF FF 07 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2C 62 01 00
+08 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00 1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00
+95 1C 47 00 00 00 00 00 B6 1E 5D 00 00 00 00 00 F3 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00
+AE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00 70 5F 5A 00 00 00 00 00 C0 20 00 00 C0 20 00 00
+3F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00 68 CF 40 00 00 00 00 00 27 D0 40 00 00 00 00 00
+C7 20 5D 00 00 00 00 00 F3 05 64 00 00 00 00 00 A5 66 5A 00 00 00 00 00 AE 60 5A 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  ö  Ê  :  .  Ö  –  ˇ  ˇ  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  .  .  .  .  q  â  ˘  ˇ  ˇ  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ,  b  .  .
+.  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .  .  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .
+ï  .  G  .  .  .  .  .  ∂  .  ]  .  .  .  .  .  Û  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .
+Æ  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .  p  _  Z  .  .  .  .  .  ¿     .  .  ¿     .  .
+?  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .  h  œ  @  .  .  .  .  .  '  –  @  .  .  .  .  .
+«     ]  .  .  .  .  .  Û  .  d  .  .  .  .  .  •  f  Z  .  .  .  .  .  Æ  `  Z  .  .  .  .  .
+
+--------------------------------2013/7/5 12:48:41--------------------------------
+Esta aplicaÁ„o teve fugas de memÛria. As fugas dos blocos pequenos s„o (excluindo as fugas esperadas, registadas por ponteiro):
+
+9 - 24 bytes: Commands x 1, Enc_Dec x 1, UnicodeString x 1
+25 - 40 bytes: UnicodeString x 1
+57 - 88 bytes: UnicodeString x 2
+89 - 120 bytes: AttHPMP x 1, SaveAccs x 1, LoginDisconnect x 2, MemoryInUse x 1
+
+O tamanho das fugas dos blocos mÈdios e grandes È (excluindo as fugas esperadas registadas por ponteiro): 32040
+
+Nota: O detalhe da fuga de memÛria foi registado num ficheiro de texto na mesma pasta desta aplicaÁ„o. Para activar a detecÁ„o de fugas de memÛria, active o DEFINE "EnableMemoryLeakReporting".
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x27E8, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432DBD [System.SysUtils][Sysutils._IntToStr32]
+433186 [System.SysUtils][Sysutils.IntToStr]
+63F9D3 [Unit1.pas][Unit1][MemoryInUse.Execute][144]
+48560B [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1763
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEA7830:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 B9 9A 78 8C 6F D2 FD FF 80 80 80 80
+00 00 00 00 00 00 00 00 61 8A EA FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 04 09 00 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 D5 1C 47 00 00 00 00 00 2F 06 5D 00 00 00 00 00
+2B 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00 EE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+B0 5F 5A 00 00 00 00 00 FC 19 00 00 FC 19 00 00 5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 3D 8D 47 00 00 00 00 00 E7 06 5D 00 00 00 00 00
+2B 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00 EE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  π  ö  x  å  o  “  ˝  ˇ  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  a  ä  Í  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ’  .  G  .  .  .  .  .  /  .  ]  .  .  .  .  .
++  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .  Ó  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+∞  _  Z  .  .  .  .  .  ¸  .  .  .  ¸  .  .  .  _  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  =  ç  G  .  .  .  .  .  Á  .  ]  .  .  .  .  .
++  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .  Ó  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 32040
+
+Este bloco foi criado pela thread 0x19FC, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+640603 [Unit1.pas][Unit1][TForm1.FormCreate][275]
+5A66E5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60EE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5FB0 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60E3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Functions
+
+O n˙mero de atribuiÁ„o era: 1720
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFEAEA10:
+90 D8 5C 00 00 00 00 00 14 00 00 00 81 01 01 00 FF 07 00 00 4A 00 54 00 4A 00 54 00 00 00 00 00
+B3 02 3D 14 00 00 00 00 00 00 00 00 00 00 00 00 9F 01 00 00 00 00 00 00 9A 01 00 00 00 00 00 00
+9B 01 3D 0A 00 00 00 00 BC 02 00 00 00 00 00 00 BB 02 00 00 00 00 00 00 08 03 3D 0A 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00 08 03 3D 0A 00 00 00 00 9A 01 00 00
+ê  ÿ  \  .  .  .  .  .  .  .  .  .  Å  .  .  .  ˇ  .  .  .  J  .  T  .  J  .  T  .  .  .  .  .
+≥  .  =  .  .  .  .  .  .  .  .  .  .  .  .  .  ü  .  .  .  .  .  .  .  ö  .  .  .  .  .  .  .
+õ  .  =  .  .  .  .  .  º  .  .  .  .  .  .  .  ª  .  .  .  .  .  .  .  .  .  =  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  =  .  .  .  .  .  ö  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x27E8, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F9F9 [Unit1.pas][Unit1][MemoryInUse.Execute][144]
+48560B [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 93344
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED0ED0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 1C 00 00 00 42 00 6C 00 6F 00 63 00 6F 00 73 00 20 00 64 00
+65 00 20 00 6D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00 65 00 6D 00 20 00 75 00 73 00 6F 00
+3A 00 20 00 30 00 2E 00 00 00 3F C6 FC 31 C5 5E FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 C1 14 ED FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 A1 6C 01 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 C5 44 4E 00 00 00 00 00 46 45 4E 00 00 00 00 00
+10 FA 63 00 00 00 00 00 0B 56 48 00 00 00 00 00 E6 CC 40 00 00 00 00 00 2D 65 BA 76 00 00 00 00
+21 C5 DD 76 00 00 00 00 E8 27 00 00 E8 27 00 00 5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  B  .  l  .  o  .  c  .  o  .  s  .     .  d  .
+e  .     .  m  .  e  .  m  .  Û  .  r  .  i  .  a  .     .  e  .  m  .     .  u  .  s  .  o  .
+:  .     .  0  .  .  .  .  .  ?  ∆  ¸  1  ≈  ^  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ¡  .  Ì  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  °  l  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ≈  D  N  .  .  .  .  .  F  E  N  .  .  .  .  .
+.  ˙  c  .  .  .  .  .  .  V  H  .  .  .  .  .  Ê  Ã  @  .  .  .  .  .  -  e  ∫  v  .  .  .  .
+!  ≈  ›  v  .  .  .  .  Ë  '  .  .  Ë  '  .  .  _  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 88
+
+Este bloco foi criado pela thread 0x27E8, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40E544 [System][InternalUStrCatN]
+40EEA7 [System][@UStrCatN]
+63F9A5 [Unit1.pas][Unit1][MemoryInUse.Execute][143]
+48560B [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 93342
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFED1190:
+C4 13 69 00 B0 04 02 00 01 00 00 00 19 00 00 00 4D 00 65 00 6D 00 F3 00 72 00 69 00 61 00 20 00
+65 00 6D 00 20 00 75 00 73 00 6F 00 3A 00 20 00 30 00 20 00 4B 00 62 00 79 00 74 00 65 00 73 00
+2E 00 00 00 C7 1C EF 31 C7 5E FC FF 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 E1 F7 EC FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 D5 62 01 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+70 3C 4B 00 00 00 00 00 3E 3F 4B 00 00 00 00 00 32 5E 4B 00 00 00 00 00 45 5F 4B 00 00 00 00 00
+D4 14 51 00 00 00 00 00 31 A3 40 00 00 00 00 00 3E 6B 4E 00 00 00 00 00 08 DF 4E 00 00 00 00 00
+52 09 51 00 00 00 00 00 FC 19 00 00 FC 19 00 00 5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  M  .  e  .  m  .  Û  .  r  .  i  .  a  .     .
+e  .  m  .     .  u  .  s  .  o  .  :  .     .  0  .     .  K  .  b  .  y  .  t  .  e  .  s  .
+.  .  .  .  «  .  Ô  1  «  ^  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ·  ˜  Ï  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  ’  b  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+p  <  K  .  .  .  .  .  >  ?  K  .  .  .  .  .  2  ^  K  .  .  .  .  .  E  _  K  .  .  .  .  .
+‘  .  Q  .  .  .  .  .  1  £  @  .  .  .  .  .  >  k  N  .  .  .  .  .  .  ﬂ  N  .  .  .  .  .
+R  .  Q  .  .  .  .  .  ¸  .  .  .  ¸  .  .  .  _  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 120
+
+Este bloco foi criado pela thread 0x19FC, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+485837 [System.Classes][Classes.TThread.$bctr]
+6405AA [Unit1.pas][Unit1][TForm1.FormCreate][271]
+5A66E5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60EE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5FB0 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60E3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: MemoryInUse
+
+O n˙mero de atribuiÁ„o era: 1717
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF76D00:
+F0 F6 63 00 00 00 00 00 A0 01 00 00 00 00 00 00 E8 27 00 00 00 00 00 01 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 85 17 EC 78 4D D7 FF FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 91 79 F7 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 E1 62 01 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+58 9B 40 00 00 00 00 00 51 A6 40 00 00 00 00 00 37 58 48 00 00 00 00 00 CF 00 64 00 00 00 00 00
+06 74 4E 00 00 00 00 00 EB D2 50 00 00 00 00 00 24 E2 50 00 00 00 00 00 31 A3 40 00 00 00 00 00
+  ˆ  c  .  .  .  .  .  †  .  .  .  .  .  .  .  Ë  '  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ö  .  Ï  x  M  ◊  ˇ  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ë  y  ˜  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  ·  b  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+X  õ  @  .  .  .  .  .  Q  ¶  @  .  .  .  .  .  7  X  H  .  .  .  .  .  œ  .  d  .  .  .  .  .
+.  t  N  .  .  .  .  .  Î  “  P  .  .  .  .  .  $  ‚  P  .  .  .  .  .  1  £  @  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x19FC, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+640618 [Unit1.pas][Unit1][TForm1.FormCreate][276]
+5A66E5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60EE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5FB0 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60E3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Commands
+
+O n˙mero de atribuiÁ„o era: 1721
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF89520:
+00 C8 5D 00 00 00 00 00 00 00 00 00 00 00 00 00 EC 2F 06 F9 9A D2 FD FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 B1 98 F8 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 84 6C 01 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 8A D3 40 00 00 00 00 00 F0 D3 40 00 00 00 00 00
+59 E9 40 00 00 00 00 00 B9 2A 5D 00 00 00 00 00 3B 88 5D 00 00 00 00 00 9E 84 5D 00 00 00 00 00
+7F 02 64 00 00 00 00 00 FC 19 00 00 FC 19 00 00 5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 64 D2 40 00 00 00 00 00 8A D3 40 00 00 00 00 00 F0 D3 40 00 00 00 00 00
+59 E9 40 00 00 00 00 00 B9 2A 5D 00 00 00 00 00 3B 88 5D 00 00 00 00 00 9E 84 5D 00 00 00 00 00
+.  »  ]  .  .  .  .  .  .  .  .  .  .  .  .  .  Ï  /  .  ˘  ö  “  ˝  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ±  ò  ¯  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  Ñ  l  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ä  ”  @  .  .  .  .  .    ”  @  .  .  .  .  .
+Y  È  @  .  .  .  .  .  π  *  ]  .  .  .  .  .  ;  à  ]  .  .  .  .  .  û  Ñ  ]  .  .  .  .  .
+  .  d  .  .  .  .  .  ¸  .  .  .  ¸  .  .  .  _  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  d  “  @  .  .  .  .  .  ä  ”  @  .  .  .  .  .    ”  @  .  .  .  .  .
+Y  È  @  .  .  .  .  .  π  *  ]  .  .  .  .  .  ;  à  ]  .  .  .  .  .  û  Ñ  ]  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 24
+
+Este bloco foi criado pela thread 0x19FC, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+409B58 [System][TObject.NewInstance]
+40A651 [System][@ClassCreate]
+409BC8 [System][TObject.$bctr]
+640651 [Unit1.pas][Unit1][TForm1.FormCreate][280]
+5A66E5 [Vcl.Forms][Forms.TCustomForm.DoCreate]
+5A60EE [Vcl.Forms][Forms.TCustomForm.AfterConstruction]
+40A6A0 [System][@AfterConstruction]
+5A5FB0 [Vcl.Forms][Forms.TCustomForm.$bctr]
+5B60E3 [Vcl.Forms][Forms.TApplication.CreateForm]
+
+O bloco est· sendo usado por um objecto da classe: Enc_Dec
+
+O n˙mero de atribuiÁ„o era: 90674
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF8A3C0:
+F0 CC 5C 00 00 00 00 00 00 00 00 00 00 00 00 00 17 E7 98 F8 21 77 FC FF 80 80 80 80 80 80 80 80
+00 00 00 00 00 00 00 00 B1 A1 F8 FF FF 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 60 60 01 00 28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00
+1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00 D5 1C 47 00 00 00 00 00 8B 10 5D 00 00 00 00 00
+37 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00 EE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+B0 5F 5A 00 00 00 00 00 FC 19 00 00 FC 19 00 00 5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00
+68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00 3D 8D 47 00 00 00 00 00 FA 10 5D 00 00 00 00 00
+37 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00 EE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00
+  Ã  \  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Á  ò  ¯  !  w  ¸  ˇ  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+.  .  .  .  .  .  .  .  ±  °  ¯  ˇ  ˇ  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  `  `  .  .  (  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .
+.  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .  ’  .  G  .  .  .  .  .  ã  .  ]  .  .  .  .  .
+7  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .  Ó  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+∞  _  Z  .  .  .  .  .  ¸  .  .  .  ¸  .  .  .  _  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .
+h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .  =  ç  G  .  .  .  .  .  ˙  .  ]  .  .  .  .  .
+7  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .  Ó  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Um bloco de memÛria n„o foi libertado. O tamanho È: 40
+
+Este bloco foi criado pela thread 0x27E8, e a an·lise da pilha interna (endereÁos de retorno) nesse momento era:
+41D128 [FastMM4.pas][FastMM4][DebugGetMem][8737]
+406525 [System][@GetMem]
+40CE1D [System][@NewUnicodeString]
+40EC2E [System][@UStrSetLength]
+432DBD [System.SysUtils][Sysutils._IntToStr32]
+433186 [System.SysUtils][Sysutils.IntToStr]
+63F97F [Unit1.pas][Unit1][MemoryInUse.Execute][143]
+48560B [System.Classes][Classes.ThreadProc]
+40CCE6 [System][@SystemThreadWrapper]
+76BA652D [BaseThreadInitThunk]
+76DDC521 [RtlUserThreadStart]
+
+O bloco est· sendo usado por um objecto da classe: UnicodeString
+
+O n˙mero de atribuiÁ„o era: 1722
+
+O Dump de memÛria actual de 256 bytes tem inicio no endereÁo 7FFFFF97AF0:
+C4 13 69 00 B0 04 02 00 01 00 00 00 01 00 00 00 30 00 00 00 A7 C4 3A 0C 49 D7 FF FF 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 00 00 00 00 B1 84 F9 FF FF 07 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68 60 01 00
+28 D1 41 00 00 00 00 00 25 65 40 00 00 00 00 00 1D CE 40 00 00 00 00 00 36 D2 40 00 00 00 00 00
+D5 1C 47 00 00 00 00 00 8B 10 5D 00 00 00 00 00 37 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00
+EE 60 5A 00 00 00 00 00 A0 A6 40 00 00 00 00 00 B0 5F 5A 00 00 00 00 00 FC 19 00 00 FC 19 00 00
+5F D3 41 00 00 00 00 00 55 65 40 00 00 00 00 00 68 CF 40 00 00 00 00 00 06 D6 40 00 00 00 00 00
+3D 8D 47 00 00 00 00 00 D8 12 5D 00 00 00 00 00 37 06 64 00 00 00 00 00 E5 66 5A 00 00 00 00 00
+ƒ  .  i  .  ∞  .  .  .  .  .  .  .  .  .  .  .  0  .  .  .  ß  ƒ  :  .  I  ◊  ˇ  ˇ  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  .  .  .  .  ±  Ñ  ˘  ˇ  ˇ  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  h  `  .  .
+(  —  A  .  .  .  .  .  %  e  @  .  .  .  .  .  .  Œ  @  .  .  .  .  .  6  “  @  .  .  .  .  .
+’  .  G  .  .  .  .  .  ã  .  ]  .  .  .  .  .  7  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .
+Ó  `  Z  .  .  .  .  .  †  ¶  @  .  .  .  .  .  ∞  _  Z  .  .  .  .  .  ¸  .  .  .  ¸  .  .  .
+_  ”  A  .  .  .  .  .  U  e  @  .  .  .  .  .  h  œ  @  .  .  .  .  .  .  ÷  @  .  .  .  .  .
+=  ç  G  .  .  .  .  .  ÿ  .  ]  .  .  .  .  .  7  .  d  .  .  .  .  .  Â  f  Z  .  .  .  .  .
+
+--------------------------------2013/7/5 13:15:45--------------------------------
+Esta aplicaÁ„o teve fugas de memÛria. As fugas dos blocos pequenos s„o (excluindo as fugas esperadas, registadas por ponteiro):
+
+9 - 24 bytes: Enc_Dec x 1, Commands x 1, UnicodeString x 1
+25 - 40 bytes: UnicodeString x 1
+57 - 88 bytes: UnicodeString x 2
+89 - 120 bytes: MemoryInUse x 1
+
+O tamanho das fugas dos blocos mÈdios e grandes È (excluindo as fugas esperadas registadas por ponteiro): 32040
+
+Nota: O detalhe da fuga de memÛria foi registado num ficheiro de texto na mesma pasta desta aplicaÁ„o. Para activar a detecÁ„o de fugas de memÛria, active o DEFINE "EnableMemoryLeakReporting".

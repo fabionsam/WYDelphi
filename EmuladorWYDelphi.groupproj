@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3C7690C3-A89E-413A-BBEA-E4B16E38525B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Emulador Pascal Delphi\GameServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Criar Acc\Acc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="EditorNPC\NPCEditor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DataBase Server\DataBaseServer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GameServer">
+        <MSBuild Projects="Emulador Pascal Delphi\GameServer.dproj"/>
+    </Target>
+    <Target Name="GameServer:Clean">
+        <MSBuild Projects="Emulador Pascal Delphi\GameServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GameServer:Make">
+        <MSBuild Projects="Emulador Pascal Delphi\GameServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Acc">
+        <MSBuild Projects="Criar Acc\Acc.dproj"/>
+    </Target>
+    <Target Name="Acc:Clean">
+        <MSBuild Projects="Criar Acc\Acc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Acc:Make">
+        <MSBuild Projects="Criar Acc\Acc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NPCEditor">
+        <MSBuild Projects="EditorNPC\NPCEditor.dproj"/>
+    </Target>
+    <Target Name="NPCEditor:Clean">
+        <MSBuild Projects="EditorNPC\NPCEditor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NPCEditor:Make">
+        <MSBuild Projects="EditorNPC\NPCEditor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DataBaseServer">
+        <MSBuild Projects="DataBase Server\DataBaseServer.dproj"/>
+    </Target>
+    <Target Name="DataBaseServer:Clean">
+        <MSBuild Projects="DataBase Server\DataBaseServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DataBaseServer:Make">
+        <MSBuild Projects="DataBase Server\DataBaseServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GameServer;Acc;NPCEditor;DataBaseServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GameServer:Clean;Acc:Clean;NPCEditor:Clean;DataBaseServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GameServer:Make;Acc:Make;NPCEditor:Make;DataBaseServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

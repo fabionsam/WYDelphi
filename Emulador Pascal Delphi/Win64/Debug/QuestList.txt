@@ -1,0 +1,6 @@
+#ID, Item, Duração (min), StartX, StartY, X1, Y1, X2, Y2, Min Lvl, Max Lvl, Capacidade, Nome
+1, 4038, 10, 2400, 2105, 2380, 2131, 2425, 2078,  40, 115, 30, Defensor da Alma
+2, 4039, 10, 2220, 1714, 2228, 1700, 2257, 1728, 116, 190, 30, Jardim dos Deuses
+3, 4040, 10,  452, 3912,  459, 3887,  497,  391, 191, 265, 30, Ressurreição do Cavaleiro Negro
+4, 4041, 10,  667, 3767,  658, 3728,  703, 3762, 266, 320, 30, Hidra Imortal
+5, 4042, 10, 1300, 4036, 1312, 4027, 1348, 4055, 231, 350, 30, Inicio da Infelicidade
