@@ -60,12 +60,19 @@ type TFunctions = class
 
     class function CheckItensTrade(player : TPlayer; transfer: Boolean): boolean;
 
+    class function DecryptVersion(pVersion: Integer): Integer;
 end;
 
 implementation
 { TFunctions }
 
 uses GlobalDefs, ConstDefs, Log, NPC, PacketsDbServer, ItemFunctions;
+
+class function TFunctions.DecryptVersion(pVersion: Integer): Integer;
+begin
+  pVersion := pVersion shr ((pVersion and 28) shr 2 + 5);
+  Result := pVersion;
+end;
 
 class function TFunctions.GetCurrTime: TDateTime;
 begin

@@ -76,11 +76,11 @@ class function TPacketHandlers.CheckLogin(var player : TPlayer; var buffer : arr
 var packet : TRequestLoginPacket absolute buffer;
 begin
   Result := false;
-//  if(packet.Version <> 762) then
-//  begin
-//    player.SendClientMessage('Atualize o client!');
-//    exit;
-//  end;
+  if(TFunctions.DecryptVersion(packet.Version) <> 759) then
+  begin
+    player.SendClientMessage('Atualize o client!');
+    exit;
+  end;
   player.WaitingDbServer := True;
   move(packet.AdapterName, player.Connection.AdapterName, 12);
   player.RequestAccount(TFunctions.CharArrayToString(packet.UserName), TFunctions.CharArrayToString(packet.PassWord));
