@@ -1309,7 +1309,7 @@ begin
   packet.Target.Index := target.ClientId;
   packet.TargetPos := target.CurrentPosition;
 
-  packet.Hold := Character.ChaosPoint;
+//  packet.Hold := Character.ChaosPoint;
   packet.SkillIndex := skillId;
   if not(self.IsPlayer) then
     GetMobMotion(packet)
@@ -1354,7 +1354,7 @@ begin
   packet.AttackerPos := CurrentPosition;
   packet.TargetPos := CurrentPosition;
 
-  packet.Hold := Character.ChaosPoint;
+//  packet.Hold := Character.ChaosPoint;
 
   packet.SkillIndex := skillId;
 //  if not(self.IsPlayer) then

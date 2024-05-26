@@ -276,7 +276,7 @@ begin
       $2E5: Result := TPacketHandlers.UngroupItem(player, buffer);
       $333: Result := TPacketHandlers.SendClientSay(player, buffer);
       $334: Result := TCommands.Received(player, buffer);
-      $366, $367: Result := TPacketHandlers.MovementCommand(player, buffer);
+      $36C, $366: Result := TPacketHandlers.MovementCommand(player, buffer);
       $369: Result := TPacketHandlers.MobNotInView(player, buffer); //verificar este packet pois nao sei o que faz e é enviado varias vezes pelo client
       $378: Result := TPacketHandlers.ChangeSkillBar(player, buffer);
       $379: Result := TPacketHandlers.BuyNpcItens(player, buffer);
@@ -295,7 +295,7 @@ begin
       $37E: Result := TPacketHandlers.ExitParty(player, buffer);
       $3AB: Result := TPacketHandlers.AcceptParty(player, buffer);
       $39D, $39E: Result := TCombatHandlers.HandleSingleTarget(player, buffer);
-      $36C: Result := TCombatHandlers.HandleAoE(player, buffer);
+      $367: Result := TCombatHandlers.HandleAoE(player, buffer);
       $289:
       begin
         if (player.IsDead) then

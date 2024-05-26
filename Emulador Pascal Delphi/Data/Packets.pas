@@ -548,46 +548,106 @@ end;
 
 
 type TTarget = packed Record
-  Index, Damage: WORD;
+  Index, Damage: Integer;
 end;
 
 //Attack Sigle Mob
 type TProcessAttackOneMob = packed Record
 	Header: TPacketHeader;
-	AttackerID, AttackCount: smallint; // Id de quem Realiza o ataque
-	AttackerPos: TPosition; // Posicao X e Y de quem Ataca
-	TargetPos: TPosition; // Posicao X e Y de quem Sofre o Ataque
-	SkillIndex: byte; // Id da skill usada
-	CurrentMp: smallint; // Mp atual de quem Ataca
-	Motion: shortint;   // (*)
-	SkillParm: shortint; // (*)
-	FlagLocal: shortint; // (*)
-	DoubleCritical: shortint; // 0 para critico Simples, 1 para critico Duplo
-	Hold : integer;
+
+  unk: array[0..3] of BYTE;
+
+  CurrentHp: Integer;
+
+  unk2: array[0..3] of BYTE;
+
   CurrentExp: Int64;
-	ReqMp: smallint; // Mp necessario para usar a Skill
-	Rsv: smallint;  // (*)
+  unk0: SmallInt;
+
+  AttackerPos: TPosition;
+  TargetPos: TPosition;
+
+  AttackerID,
+  AttackCount: WORD;
+
+  Motion: ShortInt;
+	SkillParm: ShortInt;
+  DoubleCritical: ShortInt; // 0 para critico Simples, 1 para critico Duplo
+	FlagLocal: ShortInt;
+
+  rsv: WORD;
+
+  CurrentMp: Integer;
+
+  SkillIndex: SmallInt;
+  ReqMp: SmallInt;
+
   Target: TTarget;
+
+//	AttackerID, AttackCount: smallint; // Id de quem Realiza o ataque
+//	AttackerPos: TPosition; // Posicao X e Y de quem Ataca
+//	TargetPos: TPosition; // Posicao X e Y de quem Sofre o Ataque
+//	SkillIndex: byte; // Id da skill usada
+//	CurrentMp: smallint; // Mp atual de quem Ataca
+//	Motion: shortint;   // (*)
+//	SkillParm: shortint; // (*)
+//	FlagLocal: shortint; // (*)
+//	DoubleCritical: shortint; // 0 para critico Simples, 1 para critico Duplo
+//	Hold : integer;
+//  CurrentExp: Int64;
+//	ReqMp: smallint; // Mp necessario para usar a Skill
+//	Rsv: smallint;  // (*)
+//  Target: TTarget;
 end;
 
 
 //Ataque em area
 type TProcessAoEAttack = packed Record
 	Header: TPacketHeader;
-	AttackerID,AttackCount: smallint; // Id de quem Realiza o ataque
-	AttackerPos: TPosition; // Posicao X e Y de quem Ataca
-	TargetPos: TPosition; // Posicao X e Y de quem Sofre o Ataque
-	SkillIndex: smallint; // Id da skill usada
-	CurrentMp: smallint; // Mp atual de quem Ataca
-	Motion: shortint;
-	SkillParm: shortint;
-	FlagLocal: shortint;
-	DoubleCritical: shortint; // 0 para critico Simples, 1 para critico Duplo
-	Hold : Integer;
+
+  unk: array[0..3] of BYTE;
+
+  CurrentHp: Integer;
+
+  unk2: array[0..3] of BYTE;
+
   CurrentExp: Int64;
-	ReqMp: smallint; // Mp necessario para usar a Skill
-	Rsv: smallint;
-	Targets: array[0..12] of TTarget;
+  unk0: SmallInt;
+
+  AttackerPos: TPosition;
+  TargetPos: TPosition;
+
+  AttackerID,
+  AttackCount: WORD;
+
+  Motion: BYTE;
+	SkillParm: BYTE;
+  DoubleCritical: BYTE; // 0 para critico Simples, 1 para critico Duplo
+	FlagLocal: BYTE;
+
+  rsv: WORD;
+
+  CurrentMp: Integer;
+
+  SkillIndex: SmallInt;
+  ReqMp: SmallInt;
+
+  Targets: array[0..12] of TTarget;
+
+//	AttackerID,AttackCount: smallint; // Id de quem Realiza o ataque
+//	AttackerPos: TPosition; // Posicao X e Y de quem Ataca
+//	TargetPos: TPosition; // Posicao X e Y de quem Sofre o Ataque
+//	SkillIndex: smallint; // Id da skill usada
+//	CurrentMp: smallint; // Mp atual de quem Ataca
+//	Motion: shortint;
+//	SkillParm: shortint;
+//	FlagLocal: shortint;
+//	DoubleCritical: shortint; // 0 para critico Simples, 1 para critico Duplo
+//	Hold : Integer;
+//  CurrentExp: Int64;
+//	ReqMp: smallint; // Mp necessario para usar a Skill
+//	Rsv: smallint;
+//	Targets: array[0..12] of TTarget;
 end;
 
 
@@ -661,12 +721,13 @@ end;
 type TMovementPacket = packed Record
   Header : TPacketHeader;
   Source : TPosition;
-  Speed : integer;
-  MoveType : integer;
 
-  Destination : TPosition;
+  MoveType : integer;
+  Speed : integer;
+
   Route : array [0..23] of AnsiChar;
-end; // p366 and p367
+  Destination : TPosition;
+end; // p36c
 
 type TMoveCommandPacket = packed Record // 52 -> 17
   Header: TPacketHeader;

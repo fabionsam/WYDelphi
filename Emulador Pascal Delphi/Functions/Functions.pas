@@ -347,7 +347,7 @@ begin
   ZeroMemory(@Result, SizeOf(TMovementPacket));
 
   Result.Header.Size := sizeof(TMovementPacket);
-  Result.Header.Code := $366;
+  Result.Header.Code := $36C;
   Result.Header.Index := mob.Clientid;
 
 	Result.Speed := mob.Character.CurrentScore.MoveSpeed;
