@@ -151,7 +151,7 @@ begin
   signal.Index := self.ServerId;
   signal.Code := code;
 
-  self.SendPacket(@signal, 12);
+  self.SendPacket(@signal, sizeof(TDbPacketHeader));
 end;
 
 { TDbServerLoopThread }
@@ -159,7 +159,7 @@ end;
 procedure TDbServerLoopThread.Execute;
 var
   size : Integer;
-  Buffer: Array[0..6000] of Byte;
+  Buffer: Array[0..5999] of Byte;
 begin
   Priority := tpHighest;
   FreeOnTerminate := True;

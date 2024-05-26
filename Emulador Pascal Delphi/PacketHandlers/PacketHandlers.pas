@@ -136,7 +136,7 @@ begin
     z := 0;
     while z < 12 do
     begin
-      if(z <> i) and (packet.Trade.Slot[i] = packet.Trade.Slot[z]) then
+      if(z <> i) and (packet.Trade.Slot[i] = packet.Trade.Slot[z]) and (packet.Trade.Item[z].Index <> 0) then
         break;
       inc(z);
     end;
@@ -170,7 +170,7 @@ begin
   Move(packet.Trade, player.PlayerCharacter.TradeStore, sizeof(TTradeStore));
   player.SendPacket(@packet, packet.Header.Size);
   player.SendCreateMob;
-  result:=true;
+  result := true;
 end;
 
 class function TPacketHandlers.CreateCharacter(var player: TPlayer; var buffer: array of Byte): Boolean;
@@ -479,6 +479,7 @@ begin
   player.SendScore;
   player.SendEtc;
   player.SendEquipItems(False);
+  player.SaveAccount;
   result := true;
 end;
 

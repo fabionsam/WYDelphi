@@ -108,13 +108,15 @@ type THeightMap = Record
 End;
 
 type TTradeStore = Record
-  Name: string[23];
+  Name: array[0..23] of AnsiChar;
   Item: array[0..11] of TItem;
 
   Slot: array[0..11] of BYTE;
 
   Gold: array[0..11] of integer;
-  Unknown,index: smallint;
+
+  Tax,
+  index: smallint;
 end;
 
 type TPacketAffect = Record

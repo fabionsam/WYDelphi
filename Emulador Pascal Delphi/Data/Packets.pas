@@ -156,8 +156,6 @@ type TRequestAddPoints = packed Record
 end;
 
 type TCharListCharactersData = packed Record
-  Unknow_28: array[0..3] of Byte;
-
 //  Position: array[0..3] of TPosition;
   PosX: array[0..3] of WORD;
   PosY: array[0..3] of WORD;
@@ -170,7 +168,7 @@ type TCharListCharactersData = packed Record
 
   Unknow_29: integer;
 
-  Gold: array[0..3] of Int64;
+  Gold: array[0..3] of Integer;
   Exp: array[0..3] of uInt64;
 end;
 
@@ -178,12 +176,14 @@ type TSendToCharListFromLoginPacket = packed Record
   Header : TPacketHeader;
   HashKeyTable : array[0..15] of Byte;
 
+  Unknow_28: integer;
+
   CharactersData : TCharListCharactersData;
   Storage : array[0..MAX_CARGO - 1] of TItem;
 
   Unk: array[0..63] of Byte;
 
-  Gold : Int64;
+  Gold : Integer;
   Name : array[0..11] of Byte;
   Keys : array[0..15] of Byte;
 end;
@@ -385,7 +385,7 @@ type TSendCreateMobPacket = packed Record
   //  CurrentKill : BYTE;
   //  TotalKill : WORD;
 
-    ItemEff: array[0..15] of WORD;
+    ItemEff: array[0..MAX_EQUIPS - 1] of WORD;
 
     Affect: array[0..MAXBUFFS - 1] of TPacketAffect;
 
@@ -412,32 +412,28 @@ type TSendCreateMobTradePacket = packed Record
 
   Position : TPosition;
 
-  Index: WORD;
-  Name: array[0..11] of AnsiChar;
+  ClientId: WORD;
 
-  ChaosPoint: BYTE;
-  CurrentKill: BYTE;
-  TotalKill: WORD;
+  Values: array[0..MAX_EQUIPS - 1] of BYTE;
 
   ItemEff: array[0..15] of WORD;
 
-  Affect: array[0..15] of TPacketAffect;
+  Affect: array[0..MAXBUFFS - 1] of TPacketAffect;
 
   GuildIndex: WORD;
+  MemberType: BYTE;
+
+  unk: array[0..2] of BYTE;
 
   Status: TStatus;
 
-  spawnType: BYTE;
-  MemberType: BYTE;
+  spawnType: WORD;
 
-  unk: array[0..13] of BYTE;
-  Clientid,unk2,y2,x2,clock : integer;
+  AnctCode: array[0..15] of BYTE;
 
-  unk3: array[0..7] of BYTE;
+  Tab : array[0..25] of AnsiChar;
 
-  StoreName: string[23];//Array[0..23]of AnsiChar;
-  unk4: array[0..3] of BYTE;
-  //tab: string[200];
+  StoreName: array[0..23] of AnsiChar;
 end;
 
 

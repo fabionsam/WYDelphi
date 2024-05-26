@@ -279,7 +279,7 @@ type TAccountHeader = Record
 end;
 
 type PParty = ^TParty;
-TParty = Record
+TParty = packed Record
   Leader: WORD;
   Members: TList<WORD>;
   RequestId: WORD;
@@ -287,15 +287,15 @@ TParty = Record
   function AddMember(memberClientId: WORD): Boolean;
 End;
 
-type TTradeStore = Record
-  Name: string[23];
+type TTradeStore = packed Record
+  Name: array[0..23] of AnsiChar;
   Item: array[0..11] of TItem;
   Slot: array[0..11] of BYTE;
   Gold: array[0..11] of integer;
   Unknown, Index: smallint;
 end;
 
-type TTrade = Record
+type TTrade = packed Record
 	IsTrading: boolean;
   Confirm: boolean;
 	Waiting: boolean;
@@ -310,7 +310,7 @@ type TTrade = Record
 	TradeItemSlot: array[0..14] of shortint;
 end;
 
-type TCharacterQuests = Record
+type TCharacterQuests = packed Record
   MolarDoGargula,
   PilulaMagica,
   ArchDesbloq355,

@@ -197,7 +197,7 @@ var pak : TSendCreateMobPacket;
 begin
   GetCreateMob(pak);
   ZeroMemory(@packet, sizeof(TSendCreateMobTradePacket));
-  Move(pak, packet, 132);
+  Move(pak, packet, sizeof(TSendCreateMobPacket));
 
   packet.Header.Code  := $363;
   packet.Header.Size  := sizeof(TSendCreateMobTradePacket);
@@ -205,18 +205,11 @@ begin
   packet.spawnType    := $CC;
   packet.MemberType   := $CC;
 
-  packet.StoreName    := PlayerCharacter.TradeStore.Name;
-  packet.StoreName[0] := PlayerCharacter.TradeStore.Name[0];
-  //Move(Player[index].TradeLoja.Name,packet.StoreName[0],24);
-  //Player[index].TradeLoja.Name
-  packet.x2       := packet.Position.X;
-  packet.y2       := packet.Position.Y;
-  packet.clientId := packet.Index;
-  packet.Clock    := TFunctions.Clock;
-
-  FillChar(packet.unk[0],13,$CC);
-  FillChar(packet.unk3[0],8,$CC);
-  FillChar(packet.unk4[0],4,$CC);
+  Move(PlayerCharacter.TradeStore.Name, packet.StoreName, 24);
+//  packet.x2         := packet.Position.X;
+//  packet.y2         := packet.Position.Y;
+//  packet.clientId   := packet.Index;
+//  packet.Clock      := TFunctions.Clock;
 end;
 
 class function TPlayer.GetPlayer(index: WORD; out player: TPlayer): boolean;

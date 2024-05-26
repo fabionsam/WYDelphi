@@ -1029,6 +1029,7 @@ var i: Integer;
   damageMontaria: Integer;
   vidaMontaria : Integer;
 begin
+  damageMontaria := 0;
   mana := false;
   for i := 0 to 14 do
   begin
