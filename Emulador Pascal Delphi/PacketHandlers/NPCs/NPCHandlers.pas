@@ -97,8 +97,14 @@ begin
     end;
   end;
 
-  if(Result = true) OR not(assigned(handler)) then
+  if (Result = true) then
     exit;
+
+  if not(assigned(handler)) then
+  begin
+    npc.SendChat('Ainda não estou pronto');
+    exit;
+  end;
 
   Result := handler(player, npc, packet);  
 end;
