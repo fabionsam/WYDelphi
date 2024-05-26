@@ -125,6 +125,69 @@ type TAffectInfo = record
     class operator Implicit(affect: TAffectInfoClass): TAffectInfo;
 end;
 
+TCharacterOld = record
+  private
+    function GetBits(const Index: Integer): Byte;
+    procedure SetBits(const Index: Integer; const Value: Byte);
+  public
+    Name: array[0..15] of AnsiChar;
+    CapeInfo: BYTE; // Race
+    (*
+    struct
+    {
+      UINT8 Merchant : 6;
+      UINT8 CityID : 2;
+    } Info;
+    *)
+    _MerchCity: BYTE;
+    GuildIndex: WORD;
+    ClassInfo: BYTE;
+    AffectInfo: TAffectInfo;
+    QuestInfo: WORD;
+    Gold: Integer;
+    Exp: Int64;
+    Last: TPosition;
+    BaseScore: TStatus;
+    CurrentScore: TStatus;
+    Equip: array[0..MAX_EQUIPS-1] of TItem;
+    Inventory: array[0..MAX_INV-1] of TItem;
+    Learn: LongWord;
+    pStatus: WORD;
+    pMaster: WORD;
+    pSkill: WORD;
+    Critical: ShortInt;
+    SaveMana: ShortInt;
+    SkillBar1: array[0..3] of ShortInt;
+    GuildMemberType: shortint;
+    MagicIncrement: BYTE;
+    RegenHP: BYTE;
+    RegenMP: BYTE;
+    Resist: array[0..3] of ShortInt;
+    SlotIndex: WORD;
+    ClientId: WORD; // Nunca usar isso em npcs
+    unk1: Smallint;
+    SkillBar2: array[0..15] of int8;
+    Evasion: Int16;
+    Hold: integer;
+    Tab: array [0..25] of AnsiChar;
+    {
+    // Estrtura modificada seguindo o Emulador XTS
+    HPDRAIN : Integer;
+    Absorcao: DWORD;
+    TimeStamp: Integer;
+    AtkSpeed: WORD;
+    MobType: WORD;
+    Destination: TVector2D;
+    Zeros: array[0..11] of BYTE;
+    Command: array[0..23] of AnsiChar;
+    // ----------------------------------
+    }
+    Affects: array[0..15] of TAffect;
+    ClasseMaster: integer;
+    property Merchant : Byte index $0006 read GetBits write SetBits;
+    property CityId : Byte index $0602 read GetBits write SetBits;
+end;
+
 type PCharacter = ^TCharacter;
 TCharacter = packed Record
   public
@@ -149,7 +212,24 @@ TCharacter = packed Record
     Inventory: array[0..MAX_INV-1] of TItem;
 
     Learn: uInt64; //verified
-    pStatus: WORD; //verified    pMaster: WORD; //verified    pSkill: WORD; //verified    Critical: Byte;    SaveMana: Byte;    SkillBar1: array[0..3] of Byte; //verified    unkk: array[0..3] of Byte;    Resist: array[0..3] of Byte; //verified//    ResistFire: ShortInt; //verified//    ResistIce: ShortInt; //verified//    ResistHoly: ShortInt; //verified//    ResistThunder: ShortInt; //verified
+
+    pStatus: WORD; //verified
+    pMaster: WORD; //verified
+    pSkill: WORD; //verified
+
+    Critical: Byte;
+    SaveMana: Byte;
+
+    SkillBar1: array[0..3] of Byte; //verified
+
+    unkk: array[0..3] of Byte;
+
+    Resist: array[0..3] of Byte; //verified
+//    ResistFire: ShortInt; //verified
+//    ResistIce: ShortInt; //verified
+//    ResistHoly: ShortInt; //verified
+//    ResistThunder: ShortInt; //verified
+
     unk3: array[0..209] of Byte;
 
     MagicIncrement: WORD;
@@ -182,6 +262,7 @@ TCharacter = packed Record
     function ClassLevel: TClassLevel;
     function HaveSkill(SkillId: Byte): Boolean;
     class operator Implicit(character: TCharacterClass): TCharacter;
+    class operator Implicit(character: TCharacterOld): TCharacter;
 end;
 
 type TAccountHeader = Record
@@ -956,10 +1037,10 @@ begin
   Result := TClassLevel(Equip[0].Effects[1].Value);
 end;
 
-//function TCharacter.GetBits(const Index: Integer): Byte;
-//begin
-//  Result := Util.GetBits(_MerchCity, Index);
-//end;
+function TCharacterOld.GetBits(const Index: Integer): Byte;
+begin
+  Result := Util.GetBits(_MerchCity, Index);
+end;
 
 function TCharacter.HaveSkill(SkillId: Byte): Boolean;
 var skillID2, aux: integer;
@@ -967,6 +1048,59 @@ begin
   skillID2 := SkillId mod 24;
   aux := (Learn and (1 shl skillID2));
   Result := aux <> 0;
+end;
+
+class operator TCharacter.Implicit(character: TCharacterOld): TCharacter;
+var
+  i : BYTE;
+begin
+  ZeroMemory(@Result, Sizeof(TCharacter));
+  StrPLCopy(Result.Name, character.Name, 16);
+  Result.CapeInfo := character.CapeInfo;
+  Result.Merchant := character.Merchant;
+  Result.CityId := character.CityId;
+  Result.GuildIndex := character.GuildIndex;
+  Result.ClassInfo := character.ClassInfo;
+  Result.QuestInfo := character.QuestInfo;
+  Result.Gold := character.Gold;
+  Result.Exp := character.Exp;
+  Result.Last := TPosition.Create(character.Last.X, character.Last.Y);
+  Result.AffectInfo := character.AffectInfo;
+  Result.BaseScore := character.BaseScore;
+  Result.CurrentScore := character.CurrentScore;
+
+  for I := 0 to MAX_EQUIPS-1 do
+    Result.Equip[i] := character.Equip[i];
+  for I := 0 to MAX_INV-1 do
+    Result.Inventory[i] := character.Inventory[i];
+
+  Result.Learn := character.Learn;
+  Result.pStatus := character.pStatus;
+  Result.pMaster := character.pMaster;
+  Result.pSkill := character.pSkill;
+  Result.Critical := character.Critical;
+  Result.SaveMana := character.SaveMana;
+
+  for I := 0 to 3 do
+    Result.SkillBar1[i] := character.SkillBar1[i];
+
+  for I := 0 to 3 do
+    Result.Resist[i] := character.Resist[i];
+
+  Result.GuildMemberType := character.GuildMemberType;
+  Result.MagicIncrement := character.MagicIncrement;
+  Result.RegenHP := character.RegenHP;
+  Result.RegenMP := character.RegenMP;
+
+  for I := 0 to 15 do
+    Result.SkillBar2[i] := character.SkillBar2[i];
+
+  Result.Evasion := character.Evasion;
+  Result.ChaosPoint := character.Hold;
+  Result.ClassMaster := character.ClasseMaster;
+
+  for I := 0 to MAXBUFFS - 1 do
+    Result.Affects[i] := character.Affects[i];
 end;
 
 class operator TCharacter.Implicit(character: TCharacterClass): TCharacter;
@@ -1021,10 +1155,10 @@ begin
     Result.Affects[i] := character.Affects[i];
 end;
 
-//procedure TCharacter.SetBits(const Index: Integer; const Value: Byte);
-//begin
-//  SetByteBits(_MerchCity, Index, Value);
-//end;
+procedure TCharacterOld.SetBits(const Index: Integer; const Value: Byte);
+begin
+  SetByteBits(_MerchCity, Index, Value);
+end;
 
 { TStatus }
 //function TStatus.GetMerchDir(const Index: Integer): Byte;

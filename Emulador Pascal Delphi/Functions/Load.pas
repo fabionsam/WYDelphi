@@ -210,7 +210,7 @@ begin
   local := getcurrentdir+'\ItemList.bin';
   if not(FileExists(local)) then
   begin
-    //showmessage('Arquivo não encontrado. Coloque o ItemList.bin na mesma pasta que o Leitor de ItemList.');
+    Logger.Write('Arquivo não encontrado. Coloque o ItemList.bin na mesma pasta que o Leitor de ItemList.', TLogType.Warnings);
     exit;
   end;
 
@@ -243,12 +243,12 @@ end;
 class procedure TLoad.MobBaby;
   var i: BYTE;
       local : string;
-      fs: File of TCharacter;
+      fs: File of TCharacterOld;
       erro: boolean;
-      mob : TCharacter;
+      mob : TCharacterOld;
       errorCount: integer;
 begin
-  if(MobBabyList = nil) then  MobBabyList := TList<TCharacter>.Create
+  if(MobBabyList = nil) then  MobBabyList := TList<TCharacterOld>.Create
   else                        MobBabyList.Clear;
   erro := false;
   errorCount := 0;
@@ -262,9 +262,10 @@ begin
       if(FileExists(local) = false) then
       begin
         Logger.Write('NpcBase: ' + MobBabyNames[i] + ' não encontrado.', TLogType.Warnings);
+        inc(errorCount);
+        erro := true;
         //Showmessage('Npc: ' + MobBabyNames[i] + ' não encontrado.');
         continue;
-        erro := true;
       end;
       AssignFile(fs, local);
       Reset(fs);
@@ -280,7 +281,7 @@ begin
     end;
   end;
   if(erro)then
-    Logger.Write('MountBaby carregado com' + inttostr(errorCount) + 'erros!', TLogType.ServerStatus)
+    Logger.Write('MountBaby carregado com ' + inttostr(errorCount) + ' erro(s)!', TLogType.ServerStatus)
   else Logger.Write('MountBaby carregado com sucesso!', TLogType.ServerStatus);
 end;
 
@@ -334,8 +335,8 @@ class function TLoad.InstantiateNPC(var npc: TNpc; npcId: WORD; const mobGenerDa
 var npcName: string;
   npcDirectory: string;
   storeCount, nextSlot: BYTE;
-  npcFile: file of TCharacter;
-  npcCharacter: TCharacter;
+  npcFile: file of TCharacterOld;
+  npcCharacter: TCharacterOld;
   i: BYTE;
 //  aGener : TMobGenerData;
 begin
@@ -349,7 +350,7 @@ begin
       exit;
     end;
 
-    ZeroMemory(@npcCharacter, Sizeof(TCharacter));
+    ZeroMemory(@npcCharacter, Sizeof(TCharacterOld));
     AssignFile(npcFile, npcDirectory);
     Reset(npcFile);
     Read(npcFile, npcCharacter);
@@ -366,7 +367,7 @@ begin
 //    npc.InitialPosition := npc.Character.Last;
     npc.CurrentPosition := npc.Character.Last;
 //    npc.FinalPosition := npc.Character.Last;
-    npc.StateMachine.CurrentState := TAIStates.Idle;
+    if (npc.StateMachine <> nil) then npc.StateMachine.CurrentState := TAIStates.Idle;
     npc.CalcAtackSpeed;
     npc.Character.CurrentScore := npc.Character.BaseScore;
     npc.Character.CurrentScore.CurHP := npc.Character.CurrentScore.MaxHP;
@@ -788,6 +789,10 @@ begin
   while not EOF(DataFile) do
   begin
     Readln(DataFile, lineFile);
+
+    if (Trim(Linefile) = '') then
+      continue;
+
     ExtractStrings([','],[' '],PChar(Linefile),fileStrings);
     if(TFunctions.IsNumeric(fileStrings.strings[0], skillId) = false)then begin
       filestrings.Clear;
@@ -806,7 +811,7 @@ begin
     skill.AffectTime    := StrToIntDef(fileStrings.Strings[12],0);
 
     filestrings.Clear;
-    SkillsData.Add(skill)
+    if (Trim(skill.Name) <> '') then SkillsData.Add(skill)
   end;
   fileStrings.Free;
   Logger.Write('SkillData carregado com sucesso!', TLogType.ServerStatus);

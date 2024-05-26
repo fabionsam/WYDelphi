@@ -93,15 +93,15 @@ end;
 type TRefreshInventoryPacket = packed Record
   Header : TPacketHeader;
   Inventory : array[0..MAX_INV - 1] of TItem;
-  Gold : integer;
+  Gold : Int64;
 end;
 
 type TSendCurrentHPMPPacket = packed Record
 	Header: TPacketHeader;
-	CurHP : WORD;
-	CurMP : WORD;
-  MaxHP : WORD;
-	MaxMP : WORD;
+	CurHP : Integer;
+	CurMP : Integer;
+  MaxHP : Integer;
+	MaxMP : Integer;
 end;
 
 
@@ -170,7 +170,7 @@ type TCharListCharactersData = packed Record
 
   Unknow_29: integer;
 
-  Gold: array[0..3] of Integer;
+  Gold: array[0..3] of Int64;
   Exp: array[0..3] of uInt64;
 end;
 
@@ -183,7 +183,7 @@ type TSendToCharListFromLoginPacket = packed Record
 
   Unk: array[0..63] of Byte;
 
-  Gold : Integer;
+  Gold : Int64;
   Name : array[0..11] of Byte;
   Keys : array[0..15] of Byte;
 end;
@@ -193,8 +193,8 @@ type TSendToCharListPacket = packed Record
   CharactersData : TCharListCharactersData;
   Storage : array[0..MAX_CARGO - 1] of TItem;
 
-  Gold : Integer;
-  Name : String[15];
+  Gold : Int64;
+  Name : String[11];
   Keys : String[15];
 
   unk1 : Integer;
@@ -392,7 +392,7 @@ type TSendCreateMobPacket = packed Record
     GuildIndex: WORD;
     MemberType: BYTE;
 
-    unk: array[0..3] of BYTE;
+    unk: array[0..2] of BYTE;
 
     Status: TStatus;
 
@@ -449,7 +449,7 @@ type TTradePacket = packed Record
 
 	Unknow: BYTE;
 
-	Gold: integer;
+	Gold: Int64;
 	Confirm: boolean;
 	OtherClientId: WORD;
 end;
@@ -467,7 +467,7 @@ type TBuyStoreItemPacket = packed Record
   Header: TPacketHeader;
   Slot: integer;
   SellerId: integer;
-  Gold: integer;
+  Gold: Int64;
   Unknown: integer;
   Item: TItem;
 end;
@@ -518,7 +518,7 @@ type TMoveItemPacket = packed Record
   destSlot: BYTE;
   SrcType: BYTE;
   srcSlot: BYTE;
-  Unknown: integer;   //provavel gold banco
+  Unknown: Int64;   //provavel gold banco
 end;
 
 // Request Refresh Itens

@@ -49,7 +49,7 @@ begin
     if(dirtyHpMp) then
       player.SendCurrentHPMP();
 
-    for i := 0 to MAXBUFFS do
+    for i := 0 to MAXBUFFS - 1 do
     begin
       if(player.Character.Affects[i].Time - 1 > 0) then
       begin

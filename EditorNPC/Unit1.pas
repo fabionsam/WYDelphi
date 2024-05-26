@@ -53,7 +53,7 @@ type TStatus = Record
     property ChaosRate : Byte index $0404 read GetMoveChaos write SetMoveChaos;
 end;
 
-type TOldNpc = Record //conversor nao remover
+type TOldTMSRVNpc = Record //conversor nao remover
     Name: array[0..15] of AnsiChar;
     Race: BYTE;
 
@@ -415,8 +415,8 @@ type
   end;
 
 var
-  Form1: TForm1; Npcs: array[0..30000] of TCharacter;
-  Arquivo: TCharacter; Local : string;
+  Form1: TForm1; Npcs: array[0..30000] of TCharacterOld;
+  Arquivo: TCharacterOld; Local : string;
 
 implementation
 
@@ -607,7 +607,7 @@ begin
 end;
 
 procedure TForm1.Abrir1Click(Sender: TObject);
-var f3: file of TCharacter;
+var f3: file of TCharacterOld;
 teste: file of BYTE;
 begin
   if not OpenDialog1.Execute then
@@ -617,7 +617,7 @@ begin
   AssignFile(teste, OpenDialog1.FileName);
   Reset(teste);
 
-  if FileSize(teste) > sizeof(TCharacter) then // Obtém o tamanho do arquivo then
+  if FileSize(teste) > sizeof(TCharacterOld) then // Obtém o tamanho do arquivo then
   begin
     Showmessage('Arquivo invalido!');
     exit;
@@ -667,7 +667,7 @@ begin
 end;
 
 procedure TForm1.SaveNPC(path: string);
-var f3: file of TCharacter;
+var f3: file of TCharacterOld;
     i: BYTE; componente: TComponent;
     Splitted: TArray<String>;
     str: string;
@@ -753,7 +753,7 @@ end;
 procedure TForm1.ResetForm();
 var i: BYTE; componente: TComponent;
 begin
-  ZeroMemory(@Arquivo,sizeof(TCharacter));
+  ZeroMemory(@Arquivo,sizeof(TCharacterOld));
   local := '';
   for I := 0 to 15 do
   begin

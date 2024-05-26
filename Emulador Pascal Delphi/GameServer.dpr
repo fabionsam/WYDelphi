@@ -127,7 +127,7 @@ begin
     TLoad.GuildList;
     TLoad.QuestList;
 
-//    TLoad.MobList;
+    TLoad.MobList;
 
     DbClient := TDbServerConnection.Create(ConfiguracoesDbServer.Porta, ConfiguracoesDbServer.Ip);
     if not(DbClient.DbConnect) then

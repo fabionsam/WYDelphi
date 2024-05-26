@@ -8,7 +8,7 @@ uses MiscData, PlayerData, BaseMob, SysUtils, DateUtils, Threading, Diagnostics,
 type TNpc = class(TBaseMob)
   published
     class constructor Create;
-    constructor Create(npc: TCharacter; genData: TMOBGenerData; clientId, leaderId: Integer); overload;
+    constructor Create(npc: TCharacterOld; genData: TMOBGenerData; clientId, leaderId: Integer); overload;
 
   private
     _isSummon: boolean;
@@ -27,7 +27,7 @@ type TNpc = class(TBaseMob)
     class var InstantiatedNPCs: integer;
     class var NPCs : array[1001..30000] of TNpc;
 
-    constructor Create(npc: TCharacter; clientId, leaderId: Integer); overload;
+    constructor Create(npc: TCharacterOld; clientId, leaderId: Integer); overload;
     procedure Revive();
     class procedure ForEach(parallel: Boolean; proc : TProc<TNpc>); static;
     class function GetNpc(index : Word; out mob : TNpc): Boolean;
@@ -40,7 +40,7 @@ implementation
 uses GlobalDefs, ConstDefs, Windows, Functions, CombatHandlers, Log, Util, IdleState, AIStates;
 
 { TNpc }
-constructor TNpc.Create(npc: TCharacter; genData: TMOBGenerData; clientId, leaderId: Integer);
+constructor TNpc.Create(npc: TCharacterOld; genData: TMOBGenerData; clientId, leaderId: Integer);
 var skill: TSkillData;
 begin
   Character := npc;
@@ -75,7 +75,7 @@ begin
   InstantiatedNPCs := 0;
 end;
 
-constructor TNpc.Create(npc: TCharacter; clientId, leaderId: Integer);
+constructor TNpc.Create(npc: TCharacterOld; clientId, leaderId: Integer);
 begin
   Create(npc, nil, clientId, leaderId);
   _isSummon := true;

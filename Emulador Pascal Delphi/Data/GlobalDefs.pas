@@ -35,7 +35,7 @@ var
   MobGener : TDictionary<integer, TMobGenerData>;
   TeleportsList : TList<TTeleport>;
   SkillsData : TList<TSkillData>;
-  MobBabyList : TList<TCharacter>;
+  MobBabyList : TList<TCharacterOld>;
   GemaEstelar : TList<TGemaEstelar>;
   Replations : TDictionary<BYTE, TList<WORD>>;
 

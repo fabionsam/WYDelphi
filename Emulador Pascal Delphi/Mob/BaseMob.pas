@@ -1616,7 +1616,7 @@ begin
     packet.AnctCode[i] := TItemFunctions.GetAnctCode(Item);
   end;
 
-  Move('AAAAAA', packet.Tab, 26);
+  packet.Tab := 'WYDelphi'
 end;
 
 function TBaseMob.GetCurrentHP(): Integer;

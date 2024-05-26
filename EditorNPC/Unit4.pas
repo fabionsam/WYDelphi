@@ -56,9 +56,9 @@ var DataFile : TextFile;
 lineFile : String;
 local123,diretorio:string;
 fileStrings : TStringList;
-f2: file of TOldNpc;
+f2: file of TOldTMSRVNpc;
 f3: file of TCharacter;
-aux: TOldNpc;
+aux: TOldTMSRVNpc;
 aux2: TCharacter;
 ID,ID2,j,i,px,py:integer;
 error: boolean;
@@ -140,9 +140,9 @@ end;
 procedure TF_Conversor.Button2Click(Sender: TObject);
 var
 lineFile, filePath : String;
-f2: file of TOldNpc;
+f2: file of TOldTMSRVNpc;
 f3: file of TCharacter;
-aux: TOldNpc;
+aux: TOldTMSRVNpc;
 aux2: TCharacter;
 cnt: Integer;
 begin
@@ -156,7 +156,7 @@ begin
 
     ZeroMemory(@aux2, sizeof(TCharacter));
 
-    Move(aux, aux2, sizeOf(TOldNpc));
+    Move(aux, aux2, sizeOf(TOldTMSRVNpc));
     move(aux.Equip, aux2.Equip, sizeof(TItem)*16);
     move(aux.Inventory,aux2.Inventory, sizeof(TItem)*64);
     aux2.CurrentScore.Level := aux.Stat.Level;

@@ -12,11 +12,9 @@ object Form1: TForm1
   Font.Style = []
   KeyPreview = True
   Menu = MainMenu1
-  OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
-  PixelsPerInch = 96
   TextHeight = 13
   object PageControl1: TPageControl
     Left = 8
@@ -406,10 +404,6 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Itens'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object PageControl2: TPageControl
         Left = 3
         Top = 3
@@ -419,10 +413,6 @@ object Form1: TForm1
         TabOrder = 0
         object TabSheet3: TTabSheet
           Caption = 'Equip'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object Label7: TLabel
             Left = 16
             Top = 5
@@ -667,10 +657,6 @@ object Form1: TForm1
         object TabSheet4: TTabSheet
           Caption = 'Invent'#225'rio'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object Label23: TLabel
             Left = 16
             Top = 5
@@ -945,10 +931,6 @@ object Form1: TForm1
         object TabSheet5: TTabSheet
           Caption = 'Invent'#225'rio 2'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object Label41: TLabel
             Left = 16
             Top = 5
@@ -1223,10 +1205,6 @@ object Form1: TForm1
         object TabSheet6: TTabSheet
           Caption = 'Invent'#225'rio 3'
           ImageIndex = 3
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object Label59: TLabel
             Left = 16
             Top = 5
@@ -1503,10 +1481,6 @@ object Form1: TForm1
         object TabSheet7: TTabSheet
           Caption = 'Invent'#225'rio 4'
           ImageIndex = 4
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object Label77: TLabel
             Left = 16
             Top = 5
@@ -1603,10 +1577,6 @@ object Form1: TForm1
     object TabSheet8: TTabSheet
       Caption = 'Affects'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label103: TLabel
         Left = 24
         Top = 280
