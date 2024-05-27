@@ -156,7 +156,8 @@ type TRequestAddPoints = packed Record
 end;
 
 type TCharListCharactersData = packed Record
-//  Position: array[0..3] of TPosition;
+  unk: array[0..3] of BYTE;
+
   PosX: array[0..3] of WORD;
   PosY: array[0..3] of WORD;
   Name: array[0..3] of array[0..15] of AnsiChar;
@@ -166,8 +167,6 @@ type TCharListCharactersData = packed Record
 
   GuildIndex: array[0..3] of Byte;
 
-  Unknow_29: integer;
-
   Gold: array[0..3] of Integer;
   Exp: array[0..3] of uInt64;
 end;
@@ -176,29 +175,14 @@ type TSendToCharListFromLoginPacket = packed Record
   Header : TPacketHeader;
   HashKeyTable : array[0..15] of Byte;
 
-  Unknow_28: integer;
-
   CharactersData : TCharListCharactersData;
   Storage : array[0..MAX_CARGO - 1] of TItem;
 
-  Unk: array[0..63] of Byte;
+  Unk: array[0..63] of Byte; //old cargo - 8 slots
 
   Gold : Integer;
   Name : array[0..11] of Byte;
   Keys : array[0..15] of Byte;
-end;
-
-type TSendToCharListPacket = packed Record
-  Header : TPacketHeader;
-  CharactersData : TCharListCharactersData;
-  Storage : array[0..MAX_CARGO - 1] of TItem;
-
-  Gold : Int64;
-  Name : String[11];
-  Keys : String[15];
-
-  unk1 : Integer;
-  unk2 : Integer;
 end;
 
 type TNumericTokenPacket = packed Record
@@ -435,7 +419,6 @@ type TSendCreateMobTradePacket = packed Record
 
   StoreName: array[0..23] of AnsiChar;
 end;
-
 
 type TTradePacket = packed Record
 	Header: TPacketHeader;

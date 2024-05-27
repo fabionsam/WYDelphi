@@ -30,7 +30,7 @@ begin
   end;
 
   Move(InitialCharacters[packet.ClassIndex], player.Account.Characters[packet.SlotIndex].Base, sizeof(TCharacter));
-  Move(packet.CharacterName, player.Account.Characters[packet.SlotIndex].Base.Name[0], 15);
+  Move(packet.CharacterName, player.Account.Characters[packet.SlotIndex].Base.Name[0], 16);
   player.Account.Characters[packet.SlotIndex].Base.ChaosPoint := 0;
   player.Account.Characters[packet.SlotIndex].Base.CurrentScore.MoveSpeed := 2;
   player.Account.Characters[packet.SlotIndex].Base.Last := TFunctions.GetStartXY(player, packet.SlotIndex);

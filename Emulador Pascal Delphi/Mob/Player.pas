@@ -276,13 +276,6 @@ begin
     packet.CharactersData.Exp[i] := Account.Characters[i].Base.Exp;
   end;
 
-  if(Status = CharList) then
-  begin
-    packet.Header.Size := sizeof(TUpdateCharacterListPacket);
-    SendPacket(@packet, packet.Header.Size);
-    exit;
-  end;
-
   packet.Gold := Account.Header.StorageGold;
   Move(Account.Header.StorageItens[0], packet.Storage[0], sizeof(TItem) * MAX_CARGO);
   Move(Account.Header.Username, packet.Name[0], 12);
@@ -296,13 +289,19 @@ end;
 
 procedure TPlayer.SendCharList(code: Word);
 var
-  packet: TSendToCharListPacket;
+  packet: TUpdateCharacterListPacket;
   i : BYTE;
 begin
-  ZeroMemory(@packet, sizeof(TSendToCharListPacket));
+  if(Status <> CharList) then
+  begin
+    exit;
+  end;
+
+  ZeroMemory(@packet, sizeof(TUpdateCharacterListPacket));
 
   packet.Header.Code := code;
-  packet.Header.Index := 30002;
+  packet.Header.Index := 30001;
+  packet.Header.Size := sizeof(TUpdateCharacterListPacket);
   for i := 0 to 3 do
   begin
     if(Account.Characters[i].Base.Equip[0].Index = 0) then
@@ -319,21 +318,6 @@ begin
     packet.CharactersData.Exp[i] := Account.Characters[i].Base.Exp;
   end;
 
-  if(Status = CharList) then
-  begin
-    packet.Header.Size := sizeof(TUpdateCharacterListPacket);
-    SendPacket(@packet, packet.Header.Size);
-    exit;
-  end;
-
-  packet.Gold := Account.Header.StorageGold;
-  Move(Account.Header.StorageItens[0], packet.Storage[0], sizeof(TItem) * MAX_CARGO);
-  packet.Name := Account.Header.Username;
-  packet.Keys := Account.Header.Password;
-  Status := CharList;
-  SubStatus := Senha2;
-
-  packet.Header.Size := sizeof(TSendToCharListPacket);
   SendPacket(@packet, packet.Header.Size);
 end;
 
