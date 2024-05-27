@@ -2,7 +2,7 @@ unit PlayerDataClasses;
 
 interface
 
-uses Types, Generics.Collections, Position, REST.Json, REST.Json.Types;
+uses Types, Generics.Collections, Position, REST.Json, REST.Json.Types, Variants;
 
 type TPositionClass = class
   public
@@ -225,7 +225,7 @@ type TCharacterQuestsClass = Class
                        ACristais: Array of boolean);
 End;
 
-type TCharacterDBClass = class
+type TCharacterDBClass = class(TCustomVariantType)
   public
     [JSONMarshalled(True)] [JSonName('base')]
     Base : TCharacterClass;
@@ -249,6 +249,7 @@ type TCharacterDBClass = class
     CharacterQuests : TCharacterQuestsClass;
     [JSONMarshalled(True)] [JSonName('citizenship')]
     Citizenship: Integer;
+
     constructor Create();
 end;
 

@@ -437,6 +437,8 @@ begin
   packet.Header.Size := sizeof(TSaveAccount);
   packet.Header.Code := $7;
   packet.Header.Index := DbClient.ServerId;
+  Move(self.Account.Header.AccountId, packet.Header.AccId, 50);
+
   if (self.status = Playing) then
   begin
     Move(Character, self.PlayerCharacter.Base, sizeof(TCharacter));

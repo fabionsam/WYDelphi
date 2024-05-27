@@ -161,6 +161,7 @@
         <DCCReference Include="Threads\ThreadPingDbServer.pas"/>
         <DCCReference Include="Data\PlayerDataClasses.pas"/>
         <DCCReference Include="Data\ConstDefs.pas"/>
+        <DCCReference Include="Data\InitialCharactersLoader.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -190,7 +191,19 @@
             <Deployment Version="4">
                 <DeployFile LocalName="Win32\Debug\GameServer.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win64\Debug\GameServer.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win64\Debug\GameServer.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>GameServer.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win64\Debug\GameServer.rsm" Configuration="Debug" Class="DebugSymbols"/>
+                <DeployFile LocalName="Win64\Debug\GameServer.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win64">
+                        <RemoteName>GameServer.rsm</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

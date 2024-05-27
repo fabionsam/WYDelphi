@@ -13,7 +13,7 @@ type TClientConnection = class
     Socket : TSocket;
     IpAddress : string;
     ReceivedPackets : Integer;
-    RecvBuffer : array[0..5500] of Byte;
+    RecvBuffer : array[0..10000] of Byte;
 
     procedure SendPacket(packet : pointer; size : WORD);
   private

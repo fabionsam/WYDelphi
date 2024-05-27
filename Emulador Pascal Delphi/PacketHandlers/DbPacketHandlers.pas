@@ -14,7 +14,7 @@ end;
 implementation
 
 uses
-  PacketsDbServer, GlobalDefs, Player, Functions, PlayerData, Log;
+  PacketsDbServer, GlobalDefs, Player, Functions, PlayerData, Log, InitialCharactersLoader;
 
 { TDbPacketHandlers }
 
@@ -36,7 +36,6 @@ begin
   player.Account.Characters[packet.SlotIndex].Base.Last := TFunctions.GetStartXY(player, packet.SlotIndex);
   player.SendCharList($110);
   player.WaitingDbServer := False;
-  player.SaveAccount;
   Result := True;
 end;
 

@@ -68,6 +68,7 @@ type TStatus = Record
 //    property ChaosRate : Byte index $0404 read GetMoveChaos write SetMoveChaos;
 
     class operator Implicit(status: TStatusClass): TStatus;
+    class operator Implicit(status: TStatus): TStatusClass;
 end;
 
 type TCharacterListData = Record
@@ -91,6 +92,7 @@ type TAffect = Record
 	Time: Cardinal;
 
   class operator Implicit(affect: TAffectClass): TAffect;
+  class operator Implicit(affect: TAffect): TAffectClass;
 end;
 
 type TAffectInfo = record
@@ -123,6 +125,7 @@ type TAffectInfo = record
     property Resist : Byte index $0701 read GetBits write SetBits;
 
     class operator Implicit(affect: TAffectInfoClass): TAffectInfo;
+    class operator Implicit(affect: TAffectInfo): TAffectInfoClass;
 end;
 
 TCharacterOld = record
@@ -262,6 +265,7 @@ TCharacter = packed Record
     function ClassLevel: TClassLevel;
     function HaveSkill(SkillId: Byte): Boolean;
     class operator Implicit(character: TCharacterClass): TCharacter;
+    class operator Implicit(character: TCharacter): TCharacterClass;
     class operator Implicit(character: TCharacterOld): TCharacter;
 end;
 
@@ -320,7 +324,7 @@ type TCharacterQuests = packed Record
   class operator Implicit(quest: TCharacterQuestsClass): TCharacterQuests;
 End;
 
-type TCharacterDB = record
+type TCharacterDB = packed record
   Index : Integer;  // Id único do personagem
   Base : TCharacter;
   LastAction: TTime;
@@ -1042,6 +1046,58 @@ begin
   Result := Util.GetBits(_MerchCity, Index);
 end;
 
+class operator TCharacter.Implicit(character: TCharacter): TCharacterClass;
+var
+  i: BYTE;
+begin
+  result := TCharacterClass.Create;
+  Result.Name := character.Name;
+  Result.CapeInfo := character.CapeInfo;
+  Result.Merch := character.Merchant;
+  Result.City := character.CityId;
+  Result.GuildIndex := character.GuildIndex;
+  Result.ClassInfo := character.ClassInfo;
+  Result.QuestInfo := character.QuestInfo;
+  Result.Gold := character.Gold;
+  Result.Exp := character.Exp;
+  Result.Last := TPositionClass.Create(character.Last.X, character.Last.Y);
+  Result.AffectInfo := character.AffectInfo;
+  Result.BaseScore := character.BaseScore;
+
+  for I := 0 to MAX_EQUIPS-1 do
+    Result.Equip[i] := character.Equip[i];
+  for I := 0 to MAX_INV-1 do
+    Result.Inventory[i] := character.Inventory[i];
+
+  Result.Learn := character.Learn;
+  Result.pStatus := character.pStatus;
+  Result.pMaster := character.pMaster;
+  Result.pSkill := character.pSkill;
+  Result.Critical := character.Critical;
+  Result.SaveMana := character.SaveMana;
+
+  for I := 0 to 3 do
+    Result.SkillBar1[i] := character.SkillBar1[i];
+
+  for I := 0 to 3 do
+    Result.Resist[i] := character.Resist[i];
+
+  Result.GuildMemberType := character.GuildMemberType;
+  Result.MagicIncrement := character.MagicIncrement;
+  Result.RegenHP := character.RegenHP;
+  Result.RegenMP := character.RegenMP;
+
+  for I := 0 to 15 do
+    Result.SkillBar2[i] := character.SkillBar2[i];
+
+  Result.Evasion := character.Evasion;
+  Result.Hold := character.ChaosPoint;
+  Result.ClasseMaster := character.ClassMaster;
+
+  for I := 0 to MAXBUFFS - 1 do
+    Result.Affects[i] := character.Affects[i];
+end;
+
 function TCharacter.HaveSkill(SkillId: Byte): Boolean;
 var skillID2, aux: integer;
 begin
@@ -1214,14 +1270,27 @@ end;
 class operator TAffectInfo.Implicit(affect: TAffectInfoClass): TAffectInfo;
 begin
   ZeroMemory(@Result, Sizeof(TAffectInfo));
-  affect.SlowMov := affect.SlowMov;
-  affect.DrainHP := affect.DrainHP;
-  affect.VisionDrop := affect.VisionDrop;
-  affect.Evasion := affect.Evasion;
-  affect.Snoop := affect.Snoop;
-  affect.SpeedMov := affect.SpeedMov;
-  affect.SkillDelay := affect.SkillDelay;
-  affect.Resist := affect.Resist;
+  result.SlowMov := affect.SlowMov;
+  result.DrainHP := affect.DrainHP;
+  result.VisionDrop := affect.VisionDrop;
+  result.Evasion := affect.Evasion;
+  result.Snoop := affect.Snoop;
+  result.SpeedMov := affect.SpeedMov;
+  result.SkillDelay := affect.SkillDelay;
+  result.Resist := affect.Resist;
+end;
+
+class operator TAffectInfo.Implicit(affect: TAffectInfo): TAffectInfoClass;
+begin
+  result := TAffectInfoClass.Create;
+  result.SlowMov := affect.SlowMov;
+  result.DrainHP := affect.DrainHP;
+  result.VisionDrop := affect.VisionDrop;
+  result.Evasion := affect.Evasion;
+  result.Snoop := affect.Snoop;
+  result.SpeedMov := affect.SpeedMov;
+  result.SkillDelay := affect.SkillDelay;
+  result.Resist := affect.Resist;
 end;
 
 procedure TAffectInfo.SetBits(const Index: Integer; const Value: Byte);
@@ -1273,6 +1342,15 @@ begin
   Result.Time := affect.Time;
 end;
 
+class operator TAffect.Implicit(affect: TAffect): TAffectClass;
+begin
+  result := TAffectClass.Create;
+  Result.Index := affect.Index;
+  Result.Master := affect.Master;
+  Result.Value := affect.Value;
+  Result.Time := affect.Time;
+end;
+
 { TAccountFile }
 
 class operator TAccountFile.Implicit(acc: TAccountFileClass): TAccountFile;
@@ -1314,6 +1392,30 @@ begin
   for i := 0 to MAX_CARGO-1 do
     Result.StorageItens[i] := Header.StorageItens[i];
   Result.NumericToken := Header.NumericToken;
+end;
+
+class operator TStatus.Implicit(status: TStatus): TStatusClass;
+begin
+  Result := TStatusClass.Create;
+  Result.Level := status.Level;
+  Result.Defense := status.Defense;
+  Result.Attack := status.Attack;
+  Result.Merch := status.Merchant;
+  Result.Direction := status.Direction;
+  Result.Move := status.MoveSpeed;
+  Result.Chaos := status.ChaosRate;
+  Result.MaxHP := status.MaxHP;
+  Result.MaxMP := status.MaxMP;
+  Result.CurHP := status.CurHP;
+  Result.CurMP := status.CurMP;
+  Result.Str := status.Str;
+  Result.Int := status.Int;
+  Result.Dex := status.Dex;
+  Result.Con := status.Con;
+  Result.wMaster := status.wMaster;
+  Result.fMaster := status.fMaster;
+  Result.sMaster := status.sMaster;
+  Result.tMaster := status.tMaster;
 end;
 
 end.

@@ -45,7 +45,6 @@ var
   //NPCs : array[1001..30000] of TNpc;
   //InstantiatedNPCs: WORD;
 
-  InitialCharacters: array[0..3] of TCharacter;
   Parties : array[1..750] of TParty;
   Quests: TList<TQuest>;
   Guilds: TDictionary<integer, TGuildData>;

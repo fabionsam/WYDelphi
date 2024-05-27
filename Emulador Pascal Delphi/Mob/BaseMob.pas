@@ -3,7 +3,7 @@ unit BaseMob;
 interface
 
 uses Windows, PlayerData, MiscData, Packets, Generics.Collections, SysUtils,
-  DateUtils, Diagnostics, Position, ConstDefs;
+  DateUtils, Diagnostics, Position, ConstDefs, InitialCharactersLoader;
 
 type TBaseMob = class(TObject)
   published

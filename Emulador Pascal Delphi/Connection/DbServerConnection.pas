@@ -104,7 +104,7 @@ function TDbServerConnection.PacketControl(var buffer: Array of Byte; size: Word
 var
   Header : TDbPacketHeader absolute buffer;
 begin
-  Logger.Write('DB: Recv - Code: ' + Format('0x%x', [header.Code]) + ' / Size : ' + IntToStr(header.Size), TLogType.Packets);
+  Logger.Write('DB: Recv - Code: ' + Format('0x%x', [header.Code]) + ' / Size : ' + IntToStr(header.Size) + '|' + IntToStr(size), TLogType.Packets);
 
   case header.Code of
     $2: Result := TDbPacketHandlers.ReceiveId(buffer);
@@ -127,8 +127,13 @@ end;
 procedure TDbServerConnection.SendPacket(packet: pointer; size: WORD);
 var
   retval: integer;
+  header : TDbPacketHeader;
 begin
   if(FSocket = -1) then exit;
+
+  header := TDbPacketHeader(packet^);
+  Logger.Write('DB: Send - Code: ' + Format('0x%x', [header.Code]) + ' / Size : ' + IntToStr(header.Size) +
+    ' / GameServer : ' + IntToStr(header.Index), TLogType.Packets);
 
   packet := TEncDec.Encrypt(packet, size);
 
@@ -159,20 +164,20 @@ end;
 procedure TDbServerLoopThread.Execute;
 var
   size : Integer;
-  Buffer: Array[0..5999] of Byte;
+  Buffer: Array[0..10000] of Byte;
 begin
   Priority := tpHighest;
   FreeOnTerminate := True;
-  ZeroMemory(@Buffer,6000);
+  ZeroMemory(@Buffer,10000);
   while(DBClient.Started) do
 	begin
     try
-      size := recv(DbClient.DbSocket,Buffer,6000,0); // Recebe dados do servidor
+      size := recv(DbClient.DbSocket,Buffer,10000,0); // Recebe dados do servidor
       if (size > 0) then
       begin
         TEncDec.Decrypt(Buffer[0], size);
         DbClient.PacketControl(Buffer, size);
-        ZeroMemory(@Buffer,6000);
+        ZeroMemory(@Buffer,10000);
       end
       else
       begin

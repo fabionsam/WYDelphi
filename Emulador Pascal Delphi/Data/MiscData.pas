@@ -101,6 +101,7 @@ TItem = packed record
   Effects : array[0..2] of TItemEffect;
 
   class operator Implicit(item: TItemClass): TItem;
+  class operator Implicit(item: TItem): TItemClass;
 end;
 
 type THeightMap = Record
@@ -306,6 +307,19 @@ class operator TItem.Implicit(item: TItemClass): TItem;
 var
   i : Byte;
 begin
+  result.Index := item.Index;
+  for i := 0 to 2 do
+  begin
+    result.Effects[i].Index := item.Effects[i].Index;
+    result.Effects[i].Value := item.Effects[i].Value;
+  end;
+end;
+
+class operator TItem.Implicit(item: TItem): TItemClass;
+var
+  i : Byte;
+begin
+  result := TItemClass.Create;
   result.Index := item.Index;
   for i := 0 to 2 do
   begin

@@ -71,7 +71,8 @@ uses
   EncDec in 'Connection\EncDec.pas',
   ThreadPingDbServer in 'Threads\ThreadPingDbServer.pas',
   PlayerDataClasses in 'Data\PlayerDataClasses.pas',
-  ConstDefs in 'Data\ConstDefs.pas';
+  ConstDefs in 'Data\ConstDefs.pas',
+  InitialCharactersLoader in 'Data\InitialCharactersLoader.pas';
 
 var
   stay: string;
@@ -117,8 +118,8 @@ begin
     ItemFuncs := TItemFunctions.Create;
 
     PlayersNick    := TDictionary<string, word>.Create;
-    
-    TLoad.InitCharacters;
+
+    TInitialCharactersLoader.Load;
     TLoad.ItemsList;
     TLoad.HeightMap;
     TLoad.MobBaby;

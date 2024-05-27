@@ -16,9 +16,9 @@ end;
 implementation
 
 uses
-  GlobalDefs, PacketsDbServer, Winapi.Windows, U_DMDataBase,
+  GlobalDefs, PacketsDbServer, Winapi.Windows, U_DMDataBase, SysUtils,
   FireDAC.Phys.MongoDBWrapper, REST.Json, PlayerData, PlayerDataClasses,
-  System.JSON, DTOAccount, Functions;
+  System.JSON, DTOAccount, Functions, InitialCharactersLoader;
 
 { TDbPacketHandlers }
 
@@ -27,6 +27,8 @@ class function TDbPacketHandlers.ReceiveRequestCreateCharacter(
 var
   packet : TCreateCharacterDb absolute buffer;
   packetResp : TRespCreateCharacterDb;
+  character: TCharacterDBClass;
+  accId: String;
 begin
   ZeroMemory(@packetResp, sizeof(TRespCreateCharacterDb));
   packetResp.Header.Size := sizeof(TRespCreateCharacterDb);
@@ -44,6 +46,11 @@ begin
   Move(packet.CharacterName, packetResp.CharacterName, sizeof(packet.CharacterName));
   packetResp.ClassIndex := packet.ClassIndex;
   gameServer.SendPacket(@packetResp, packetResp.Header.Size);
+  character := TCharacterDBClass.Create;
+  character.Base := InitialCharacters[packet.ClassIndex];
+  character.Base.Name := Trim(TEncoding.ANSI.GetString(BytesOf(@packet.CharacterName[0], Sizeof(packet.CharacterName))));
+  accId := TEncoding.ANSI.GetString(BytesOf(@packet.Header.AccId[0], Sizeof(packet.Header.AccId)));
+  DMDataBase.UpdateAddNewCharacter(character, Trim(accId), packet.SlotIndex);
 end;
 
 class function TDbPacketHandlers.ReceiveRequestId(gameServer: TGameServer;

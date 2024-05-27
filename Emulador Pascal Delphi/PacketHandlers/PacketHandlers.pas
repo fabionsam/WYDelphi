@@ -193,9 +193,11 @@ begin
   end;
 
   ZeroMemory(@packetDb, sizeof(TCreateCharacterDb));
+
   packetDb.Header.Size := sizeof(TCreateCharacterDb);
   packetDb.Header.Code := $5;
   packetDb.Header.Index := DbClient.ServerId;
+  Move(player.Account.Header.AccountId, packetDb.Header.AccId, 50);
   Move(packet.Name, packetDb.CharacterName, sizeof(packet.Name));
   packetDb.SlotIndex := packet.SlotIndex;
   packetDb.ClassIndex := packet.ClassIndex;

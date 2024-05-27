@@ -12,6 +12,7 @@ type TDbPacketHeader = packed Record
   Code: Smallint;
   Index: Smallint;
   Time: LongWord;
+  AccId: array[0..49] of AnsiChar;
 end;
 
 type TCreateCharacterDb = packed Record

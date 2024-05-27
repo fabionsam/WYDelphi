@@ -2,7 +2,7 @@ unit NPCHandlers;
 
 interface
 
-uses Windows, SysUtils, Math, Position,
+uses Windows, SysUtils, Math, Position, InitialCharactersLoader,
   Player, Packets, NPC, PlayerData, ItemFunctions, MiscData;
 
 type TNPCHandlers = class(TObject)

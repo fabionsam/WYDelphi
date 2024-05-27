@@ -26,7 +26,8 @@ uses
   PlayerDataClasses in '..\Emulador Pascal Delphi\Data\PlayerDataClasses.pas',
   Load in 'Functions\Load.pas',
   DTOAccount in 'Data\DTO\DTOAccount.pas',
-  ConstDefs in '..\Emulador Pascal Delphi\Data\ConstDefs.pas';
+  ConstDefs in '..\Emulador Pascal Delphi\Data\ConstDefs.pas',
+  InitialCharactersLoader in '..\Emulador Pascal Delphi\Data\InitialCharactersLoader.pas';
 
 var
   stay: string;
@@ -54,6 +55,8 @@ begin
 
     Logger := TLog.Create;
     Server := TServerSocket.Create(ConfiguracoesDbServer.Porta);
+
+    TInitialCharactersLoader.Load;
 
     DMDataBase := TDMDataBase.Create(nil);
     DMDataBase.UpdateActive(False);

@@ -1,5 +1,4 @@
 object DMDataBase: TDMDataBase
-  OldCreateOrder = False
   OnCreate = DataModuleCreate
   Height = 150
   Width = 215
@@ -12,7 +11,6 @@ object DMDataBase: TDMDataBase
     Params.Strings = (
       'Server=localhost'
       'DriverID=Mongo')
-    Connected = True
     Left = 31
     Top = 16
   end

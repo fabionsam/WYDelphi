@@ -24,6 +24,7 @@ type
     procedure UpdateActive(Active: Boolean); overload;
     procedure UpdateActive(Active: Boolean; serverId : Byte); overload;
     procedure UpdateActive(Active: Boolean; accountId : String; serverId : Byte); overload;
+    procedure UpdateAddNewCharacter(Character: TCharacterDBClass; accountId : String; position: byte);
     function CharacterNameInUse(Name: String): Boolean;
   end;
 
@@ -82,6 +83,17 @@ begin
   MongoUpd := TMongoUpdate.Create(FConMongo.Env);
   MongoUpd.Match().Add('_id', TJsonOId.Create(accountId));
   MongoUpd.Modify().&Set().Field('header.isActive', Active).Field('header.serverIdActive', serverId).&End;
+  FConMongo['wyd']['account'].Update(MongoUpd);
+  MongoUpd.Free;
+end;
+
+procedure TDMDataBase.UpdateAddNewCharacter(Character: TCharacterDBClass; accountId : String; position: byte);
+var
+  MongoUpd : TMongoUpdate;
+begin
+  MongoUpd := TMongoUpdate.Create(FConMongo.Env);
+  MongoUpd.Match().Add('_id', TJsonOId.Create(accountId));
+  MongoUpd.Modify().&Set('{ "characters.'+IntToStr(position)+'": '+TJson.ObjectToJsonString(Character)+' }').&End;
   FConMongo['wyd']['account'].Update(MongoUpd);
   MongoUpd.Free;
 end;
